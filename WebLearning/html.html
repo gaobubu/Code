@@ -1,0 +1,774 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/default.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/languages/go.min.js"></script>  
+    <script>hljs.highlightAll();</script>
+    <script src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
+    <title>EXERCITE</title>
+</head>
+<body>
+  <header>
+    <div class="logo">My Website</div>
+    <nav class="navigation">
+      <a href="#">A</a>
+      <a href="#">B</a>
+      <a href="#">C</a>
+      <a href="#">D</a>
+      <a href="#">E</a>
+    </nav>
+  </header>
+  <div class="container">
+    <div id="sticky-table">
+      <div id="sticky">
+        <a href="#class-id-dom-attribute" class="doc-title" data-link="Class-ID-DOM-Attribute">Class, ID, DOM, Attribute</a>
+        <a href="#th-c-b-n-trong-html" class="doc-title ">Các thẻ cơ bản HTML</a>
+        <a href="#heading-paragraph" class="doc-title " id="doc-title">Heading, paragraph</a>
+        <a href="#from-table" class="doc-title ">Form, Table</a>
+        <a href="#inline-v-block" class="doc-title ">Inline & Block</a>
+      </div>
+    </div>
+    <div id="sidebar">
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingOne">
+          <button class="accordion-button dropdown-toggle" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+            HTML, CSS, JavaScript
+          </button>
+        </h2>
+        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+          <div class="accordion-body active" >
+            <a href="html.html">HTML</a>
+          </div>
+        </div>
+        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            <a href="">CSS</a>
+          </div>
+        </div>
+        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            <a href="Javascript.html">JavaScript</a>
+          </div>
+        </div>
+      </div>
+        
+            
+      <div class="accordion-item">
+       <h2 class="accordion-header" id="headingTwo">
+          <button class="accordion-button dropdown-toggle" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+            Client, Server, Git
+          </button>
+          </h2>
+        <div id="collapseTwo" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+             <a href="HTTP.html">HTTP request</a>
+          </div>
+        </div>
+        <div id="collapseTwo" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            <a href="Client&Server.html">Client & Server</a>
+          </div>
+        </div>
+        <div id="collapseTwo" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            <a href="Git.html">Git</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+    <div id="Content-doc" class="document-content">
+      <h1 id="kh-i-ni-m">Khái niệm</h1>
+      <ul>
+      <li>HTML là viết tắt của <strong>HyperText Markup Language</strong></li>
+      <li>Để đánh dấu, định dạng nội dung, xác định cấu trúc của trang</li>
+      <li>Xác định các phần tử như tiêu đề nội dung chính, hình ảnh, chân trang<ul>
+      <li>các thẻ thường gặp: <code>&lt;html&gt;</code>, <code>&lt;head&gt;</code>, <code>&lt;body&gt;</code></li>
+      </ul>
+      </li>
+      </ul>
+      <h1 class="document-section" id="class-id-dom-attribute">CLass, ID, DOM, Attribute</h1>
+      <h2 id="khai-ni-m">Khai niệm</h2>
+      <ul>
+      <li><h3 id="class">Class</h3>
+      <ul>
+      <li>Xác định nhóm phần tử chung đặc điểm</li>
+      <li>Sử dụng cho nhiều phần tử <pre><code class="lang-html">  <span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">style</span>&gt;</span><span class="css">
+        <span class="hljs-selector-class">.highlight</span> { 
+            <span class="hljs-attribute">background-color</span>: yellow; 
+            <span class="hljs-attribute">font-weight</span>: bold; 
+            }
+        </span><span class="hljs-tag">&lt;/<span class="hljs-name">style</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"highlight"</span>&gt;</span>This is an important paragraph.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"highlight"</span>&gt;</span>Another important paragraph.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
+      </code></pre>
+      </li>
+      </ul>
+      </li>
+      <li><h3 id="id">ID</h3>
+      <ul>
+      <li>Xác định duy nhất cho 1 phần tử cụ thể</li>
+      <li>Mỗi phần tử chỉ có 1 ID duy nhất</li>
+      <li>Sử dụng ID thường dùng để chọn và thao tác với một phần tử cụ thể trong CSS hoặc JavaScript<pre><code class="lang-html">  <span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">style</span>&gt;</span><span class="css">
+        <span class="hljs-selector-id">#special-box</span> {
+          <span class="hljs-attribute">background-color</span>: lightblue;
+          <span class="hljs-attribute">border</span>: <span class="hljs-number">1px</span> solid darkblue;
+          <span class="hljs-attribute">padding</span>: <span class="hljs-number">10px</span>;
+        }
+        </span><span class="hljs-tag">&lt;/<span class="hljs-name">style</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"special-box"</span>&gt;</span>This is a special box.<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
+      </code></pre>
+      </li>
+      </ul>
+      </li>
+      <li><h3 id="dom">DOM</h3>
+      <ul>
+      <li><strong>DOM (Document Object Model):</strong>  là một cách để biểu diễn cấu trúc của một trang web hoặc tài liệu XML dưới dạng một cây đối tượng</li>
+      <li>Cho phép javascript tương tác và thay đổi cấu trúc, nội dung, tạo các tương tác animation mà ko cần load trang<ul>
+      <li>VD: cho đoạn mã html sau<pre><code class="lang-html"><span class="hljs-meta">&lt;!DOCTYPE html&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">html</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">title</span>&gt;</span>DOM Example<span class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">h1</span>&gt;</span>Hello, DOM!<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>This is an example of using the DOM.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span>
+      </code></pre>
+      </li>
+      <li>DOM sẽ tạo một cây đối tượng sau
+      ```</li>
+      <li>Document (root node)<ul>
+      <li>html<ul>
+      <li>head<ul>
+      <li>title</li>
+      <li>Text node: &quot;DOM Example&quot;</li>
+      </ul>
+      </li>
+      <li>body<ul>
+      <li>h1</li>
+      <li>Text node: &quot;Hello, DOM!&quot;</li>
+      <li>p</li>
+      <li>Text node: &quot;This is an example of using the DOM.&quot;
+      ```</li>
+      </ul>
+      </li>
+      </ul>
+      </li>
+      </ul>
+      </li>
+      <li>JavaScript có thể được sử dụng để truy cập và thay đổi các phần tử trong cây DOM. VD thay đổi thẻ <code>&lt;h1&gt;</code><pre><code class="lang-js"><span class="hljs-keyword">let</span> <span class="hljs-attr">headingElement</span> = document.querySelector(<span class="hljs-string">"h1"</span>);
+      headingElement.<span class="hljs-attr">textContent</span> = <span class="hljs-string">"Hello, Updated DOM!"</span>;
+      </code></pre>
+      </li>
+      </ul>
+      </li>
+      </ul>
+      </li>
+      <li><h3 id="attribute-thu-c-t-nh-">Attribute(thuộc tính)</h3>
+      <ul>
+      <li>Thông tin bổ sung được đặt trong các thẻ HTML để xác định các đặc tính hoặc thông tin liên quan đến phần tử đó</li>
+      <li>VD trong thẻ <code>&lt;img&gt;</code><pre><code class="lang-html">  &lt;<span class="hljs-selector-tag">img</span> src=<span class="hljs-string">"image.jpg"</span> alt=<span class="hljs-string">"A beautiful image"</span> <span class="hljs-attribute">width</span>=<span class="hljs-string">"300"</span> height=<span class="hljs-string">"200"</span>&gt;
+      </code></pre>
+      <ul>
+      <li><strong>src:</strong> Xác định nguồn (URL) của hình ảnh.</li>
+      <li><strong>alt:</strong> Cung cấp văn bản thay thế cho hình ảnh (hiển thị khi hình ảnh không thể tải hoặc cho người dùng không thể xem hình ảnh).</li>
+      <li><strong>width:</strong> Xác định chiều rộng của hình ảnh.</li>
+      <li><strong>height:</strong> Xác định chiều cao của hình ảnh.</li>
+      </ul>
+      </li>
+      </ul>
+      </li>
+      </ul>
+      <h1 id="th-c-b-n-trong-html" class="document-section" >Thẻ cơ bản trong HTML</h1>
+      <ul>
+      <li><h2 id="c-c-lo-i-th-c-b-n">Các loại thẻ cơ bản</h2>
+      <pre><code class="lang-html">  <span class="hljs-meta">&lt;!DOCTYPE&gt;</span>      <span class="hljs-comment">&lt;!--xác định phiên bản html--&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">html</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span>   <span class="hljs-comment">&lt;!--bắt đầu tài liệu--&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span>   <span class="hljs-comment">&lt;!--chứa tiêu đề tập tin css--&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">title</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span> <span class="hljs-comment">&lt;!--tiêu đề--&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>   <span class="hljs-comment">&lt;!--nội dung chính--&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>     <span class="hljs-comment">&lt;!--khối phần tử--&gt;</span>
+      </code></pre>
+      <ul>
+      <li><h3 id="v-n-b-n">Văn bản</h3>
+      <pre><code class="lang-html">  <span class="hljs-tag">&lt;<span class="hljs-name">h1</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">h6</span>&gt;</span><span class="hljs-comment">&lt;!--làm tiêu đề--&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span> <span class="hljs-comment">&lt;!--tạo văn bản--&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">span</span>&gt;</span><span class="hljs-comment">&lt;!--nhóm các phần tử văn bản để áp dụng css--&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">strong</span>&gt;</span>  <span class="hljs-comment">&lt;!--chữ đậm--&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">em</span>&gt;</span> <span class="hljs-comment">&lt;!--chữ nghiêng--&gt;</span>
+      </code></pre>
+      </li>
+      <li><h3 id="danh-s-ch">Danh sách</h3>
+      <pre><code class="lang-html">  <span class="hljs-tag">&lt;<span class="hljs-name">ul</span>&gt;</span>  <span class="hljs-comment">&lt;!-- unordered list --&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">ol</span>&gt;</span> <span class="hljs-comment">&lt;!-- ordered list --&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span> <span class="hljs-comment">&lt;!-- list item --&gt;</span>
+      </code></pre>
+      </li>
+      <li><h3 id="li-n-k-t">Liên kết</h3>
+      <pre><code class="lang-html">  <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"địa chỉ URL liên kết"</span>&gt;</span> 
+        <span class="hljs-comment">&lt;!-- liên kết web ở tài liệu khác --&gt;</span>
+      </code></pre>
+      </li>
+      <li><h3 id="h-nh-nh">Hình ảnh</h3>
+      <pre><code class="lang-html">  <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"đường dẫn vào ảnh"</span>&gt;</span>
+        <span class="hljs-comment">&lt;!-- hiển thị hình ảnh --&gt;</span>
+      </code></pre>
+      </li>
+      <li><h3 id="-nh-d-ng">Định dạng</h3>
+      <pre><code class="lang-html">  <span class="hljs-tag">&lt;<span class="hljs-name">br</span>&gt;</span>
+        <span class="hljs-comment">&lt;!-- xuống dòng  --&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">hr</span>&gt;</span>
+        <span class="hljs-comment">&lt;!-- kẻ ngang chia văn bản --&gt;</span>
+      </code></pre>
+      </li>
+      <li><h3 id="bi-u-m-u">Biểu mẫu</h3>
+      <pre><code class="lang-html">  <span class="hljs-tag">&lt;<span class="hljs-name">form</span>&gt;</span><span class="hljs-comment">&lt;!-- tạo biểu mẫu login, signup --&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">input</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">textarea</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">select</span>&gt;</span><span class="hljs-comment">&lt;!-- thu thập dữ liệu --&gt;</span>
+      </code></pre>
+      </li>
+      <li><h3 id="b-ng">Bảng</h3>
+      <pre><code class="lang-html">  <span class="hljs-tag">&lt;<span class="hljs-name">table</span>&gt;</span><span class="hljs-comment">&lt;!--bảng--&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">th</span>&gt;</span><span class="hljs-comment">&lt;!-- table header --&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">tr</span>&gt;</span><span class="hljs-comment">&lt;!-- hàng --&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span><span class="hljs-comment">&lt;!-- ô --&gt;</span>
+      </code></pre>
+      </li>
+      <li><h3 id="ph-ng-ti-n">Phương tiện</h3>
+      <pre><code class="lang-html">  <span class="hljs-tag">&lt;<span class="hljs-name">video</span> <span class="hljs-attr">src</span>=<span class="hljs-string">""</span>&gt;</span>
+        <span class="hljs-comment">&lt;!-- nhúng video --&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">audio</span> <span class="hljs-attr">src</span>=<span class="hljs-string">""</span>&gt;</span>
+        <span class="hljs-comment">&lt;!-- nhúng âm thanh --&gt;</span>
+      </code></pre>
+      </li>
+      </ul>
+      </li>
+      <li><h2 id="c-c-attribure-thu-c-t-nh-i-k-m-v-i-c-c-th-trong-html">Các attribure(thuộc tính) đi kèm với các thẻ trong HTML</h2>
+      <ol>
+      <li><strong><code>&lt;a&gt;</code> (liên kết):</strong><ul>
+      <li><code>href</code>: Đường dẫn đến tài liệu hoặc trang web liên kết.</li>
+      <li><code>target</code>: Xác định cách mở liên kết (ví dụ: <code>_blank</code> để mở trong cửa sổ mới).</li>
+      <li><code>title</code>: Tiêu đề mô tả hoặc thông tin gợi ý khi di chuột qua liên kết.</li>
+      </ul>
+      </li>
+      <li><strong> <code>&lt;img&gt;</code> (hình ảnh):</strong><ul>
+      <li><code>src</code>: Đường dẫn tới hình ảnh.<ul>
+      <li><code>alt</code>: Văn bản mô tả thay thế khi hình ảnh không thể tải.</li>
+      <li><code>width</code> và <code>height</code>: Kích thước của hình ảnh.</li>
+      </ul>
+      </li>
+      </ul>
+      </li>
+      <li><strong><code>&lt;input&gt;</code> (ô nhập liệu):</strong><ul>
+      <li><code>type</code>: Xác định loại dữ liệu (ví dụ: <code>text</code>, <code>password</code>, <code>email</code>, <code>checkbox</code>, <code>radio</code>, v.v.).<ul>
+      <li><code>name</code>: Tên trường dữ liệu để gửi đi khi form được gửi.</li>
+      </ul>
+      </li>
+      <li><code>id</code>: Định danh duy nhất cho ô nhập liệu để kết nối với các thẻ <code>&lt;label&gt;</code> hoặc sử dụng trong JavaScript.<ul>
+      <li><code>value</code>: Giá trị mặc định của ô nhập liệu.</li>
+      </ul>
+      </li>
+      </ul>
+      </li>
+      <li><strong><code>&lt;button&gt;</code> (nút bấm):</strong><ul>
+      <li><code>type</code>: Xác định loại nút (ví dụ: <code>submit</code>, <code>reset</code>, <code>button</code>).<ul>
+      <li><code>onclick</code>: Xử lý sự kiện click bằng JavaScript.</li>
+      </ul>
+      </li>
+      </ul>
+      </li>
+      <li><strong><code>&lt;textarea&gt;</code> (ô nhập liệu đa dòng):</strong><ul>
+      <li><code>name</code>: Tên trường dữ liệu để gửi đi khi form được gửi.</li>
+      <li><code>id</code>: Định danh duy nhất để kết nối với các thẻ <code>&lt;label&gt;</code> hoặc sử dụng trong JavaScript.<ul>
+      <li><code>rows</code> và <code>cols</code>: Số hàng và cột hiển thị.</li>
+      </ul>
+      </li>
+      </ul>
+      </li>
+      <li><strong><code>&lt;select&gt;</code> (danh sách rớt): </strong><ul>
+      <li><code>name</code>: Tên trường dữ liệu để gửi đi khi form được gửi.</li>
+      <li><code>id</code>: Định danh duy nhất để kết nối với các thẻ <code>&lt;label&gt;</code> hoặc sử dụng trong JavaScript.</li>
+      </ul>
+      </li>
+      <li><strong><code>&lt;form&gt;</code> (biểu mẫu): </strong><ul>
+      <li><code>action</code>: Đường dẫn xử lý dữ liệu form trên máy chủ.<ul>
+      <li><code>method</code>: Phương thức gửi dữ liệu (ví dụ: <code>get</code>, <code>post</code>).</li>
+      <li><code>name</code>: Tên của form.</li>
+      </ul>
+      </li>
+      </ul>
+      </li>
+      <li><strong><code>&lt;label&gt;</code> (nhãn):</strong><ul>
+      <li><code>for</code>: Liên kết với trường nhập liệu bằng cách sử dụng <code>id</code>.</li>
+      </ul>
+      </li>
+      <li><strong><code>&lt;table&gt;</code> (bảng)</strong><ul>
+      <li><code>border</code>: Độ rộng đường viền bảng.<ul>
+      <li><code>width</code>: Độ rộng bảng.</li>
+      </ul>
+      </li>
+      </ul>
+      </li>
+      <li><strong><code>&lt;meta&gt;</code> (thẻ meta):</strong><ul>
+      <li><code>charset</code>: Định rõ bảng mã ký tự sử dụng cho trang web.<ul>
+      <li><code>name</code> và <code>content</code>: Để cung cấp các thông tin khác nhau như mô tả, từ khóa, tác giả, v.v.
+        
+      
+      </li>
+      </ul>
+      </li>
+      </ul>
+      </li>
+      </ol>
+      </li>
+      <h1 id="heading-paragraph" class="document-section" >Heading, paragraph</h1>
+      <h2 id="kh-i-ni-m">Khái niệm</h2>
+      <li>Tiêu đề <strong>(heading)</strong> và đoạn văn bản <strong>(paragraph)</strong> là hai loại phần tử cơ bản trong HTML được sử dụng để tổ chức và hiển thị nội dung trên trang web. </li>
+      <li><h4 id="heading-ti-u-">Heading(tiêu đề)</h4>
+      <ul>
+      <li><strong>Mục đích:</strong> Các thẻ heading được sử dụng để định dạng và hiển thị các tiêu đề hoặc phần tiêu đề của nội dung trang web. Chúng giúp tạo ra cấu trúc nội dung, chỉ dẫn người đọc về chủ đề chính và phân loại các phần khác nhau.</li>
+      <li><strong>Cấp độ tiêu đề:</strong> Có 6 cấp độ tiêu đề từ <code>&lt;h1&gt;</code> đến <code>&lt;h6&gt;</code>, trong đó <code>&lt;h1&gt;</code> là tiêu đề lớn nhất và <code>&lt;h6&gt;</code> là tiêu đề nhỏ nhất. Thường chỉ nên có một thẻ <code>&lt;h1&gt;</code> duy nhất trong mỗi trang để xác định chủ đề chính.<pre><code class="lang-html">  <span class="hljs-tag">&lt;<span class="hljs-name">h1</span>&gt;</span>Tiêu đề chính<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">h2</span>&gt;</span>Phần tiêu đề con<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">h3</span>&gt;</span>Phần tiêu đề nhỏ hơn<span class="hljs-tag">&lt;/<span class="hljs-name">h3</span>&gt;</span>
+      </code></pre>
+      </li>
+      </ul>
+      </li>
+      <li><h4 id="paragraph-o-n-v-n-b-n-">Paragraph (Đoạn văn bản)</h4>
+      <ul>
+      <li><strong>Mục đích:</strong> Thẻ <code>&lt;p&gt;</code> được sử dụng để tạo và hiển thị đoạn văn bản thông thường. Chúng thường chứa nội dung mô tả, thông tin chi tiết và các đoạn văn bản liên quan đến chủ đề chính.</li>
+      <li><strong>Cấu trúc nội dung:</strong> Thẻ <code>&lt;p&gt;</code> không tạo ra cấu trúc nội dung như heading. Chúng chỉ tạo ra các đoạn văn bản thông thường mà không phân loại nội dung thành các mức độ ưu tiên như heading<pre><code class="lang-html">  &lt;p&gt;Đây là mộ<span class="hljs-built_in">t</span> ví dụ về cách sử dụng thẻ &amp;lt;p&amp;gt; để <span class="hljs-built_in">t</span>ạo đoạ<span class="hljs-built_in">n</span> vă<span class="hljs-built_in">n</span> bả<span class="hljs-built_in">n</span> trong HTML.&lt;/p&gt;
+        &lt;p&gt;Mỗi thẻ &amp;lt;p&amp;gt; sẽ <span class="hljs-built_in">t</span>ạo mộ<span class="hljs-built_in">t</span> đoạ<span class="hljs-built_in">n</span> vă<span class="hljs-built_in">n</span> bả<span class="hljs-built_in">n</span> riêng biệt.&lt;/p&gt;
+      </code></pre>
+      </li>
+      </ul>
+      </li>
+      </ul>
+      <h1 id="from-table" class="document-section">From, Table</h1>
+      <ul>
+      <li><h2 id="x-l-form-submit">Xử lý form submit</h2>
+      <ul>
+      <li>Thực hiện bằng cách sử dụng thuộc tính <code>action</code> của thẻ <code>&lt;form&gt;</code> để xác định URL hoặc tệp xử lý dữ liệu form trên máy chủ. Khi người dùng nhấn nút Submit trong form, dữ liệu trong form sẽ được gửi đến URL hoặc tệp xử lý được chỉ định trong thuộc tính <code>action</code>.</li>
+      <li>VD cơ bản về cách xử lý form submit<pre><code class="lang-html">  <span class="hljs-meta">&lt;!DOCTYPE html&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">html</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">title</span>&gt;</span>Form Submit Example<span class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">form</span> <span class="hljs-attr">method</span>=<span class="hljs-string">"post"</span> <span class="hljs-attr">action</span>=<span class="hljs-string">"process_form.php"</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">for</span>=<span class="hljs-string">"name"</span>&gt;</span>Name:<span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"text"</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"name"</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"name"</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">br</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">for</span>=<span class="hljs-string">"email"</span>&gt;</span>Email:<span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"email"</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"email"</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"email"</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">br</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"submit"</span> <span class="hljs-attr">value</span>=<span class="hljs-string">"Submit"</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">form</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span>
+      </code></pre>
+      </li>
+      <li>Trong ví dụ trên:<ul>
+      <li><code>method=&quot;post&quot;</code> xác định phương thức gửi dữ liệu, có thể là &quot;post&quot; hoặc &quot;get&quot;.</li>
+      <li><code>action=&quot;process_form.php&quot;</code> xác định tệp PHP (hoặc URL) mà dữ liệu form sẽ được gửi đến để xử lý.</li>
+      <li>Khi người dùng nhấn nút Submit, trình duyệt sẽ gửi dữ liệu trong form đến tệp <code>process_form.php</code> để xử lý. Trong tệp này, bạn có thể sử dụng các biến như <code>$_POST[&quot;name&quot;]</code> và <code>$_POST[&quot;email&quot;]</code> để truy cập dữ liệu được gửi từ form.</li>
+      </ul>
+      </li>
+      <li><p>Hoặc VD trong tệp PHP</p>
+      <pre><code class="lang-php">  &lt;?php
+        <span class="hljs-keyword">if</span> (<span class="hljs-variable">$_SERVER</span>[<span class="hljs-string">"REQUEST_METHOD"</span>] == <span class="hljs-string">"POST"</span>) {
+            <span class="hljs-variable">$name</span> = <span class="hljs-variable">$_POST</span>[<span class="hljs-string">"name"</span>];
+            <span class="hljs-variable">$email</span> = <span class="hljs-variable">$_POST</span>[<span class="hljs-string">"email"</span>];
+      
+            <span class="hljs-regexp">//</span> Xử lý dữ liệu ở đây (lưu vào cơ sở dữ liệu, gửi email, v.v.)
+            <span class="hljs-regexp">//</span> ...
+      
+            <span class="hljs-regexp">//</span> Chuyển hướng hoặc hiển thị thông báo thành công
+            header(<span class="hljs-string">"Location: success_page.html"</span>);
+            <span class="hljs-keyword">exit</span>;
+        }
+        ?&gt;
+      </code></pre>
+      <ul>
+      <li>Trong ví dụ này, sau khi xử lý dữ liệu, chúng ta sử dụng hàm <code>header()</code> để chuyển hướng trình duyệt sang trang <code>success_page.html</code> để thông báo cho người dùng rằng dữ liệu đã được gửi thành công.</li>
+      </ul>
+      </li>
+      </ul>
+      </li>
+      <li><h2 id="x-l-form-handle-error">Xử lý form handle error</h2>
+      <ul>
+      <li><p>Xử lý lỗi trong form thường liên quan đến việc kiểm tra dữ liệu người dùng nhập vào để đảm bảo rằng nó hợp lệ và đáp ứng các yêu cầu</p></li>
+      <pre><code class="lang-html">  <span class="hljs-meta">&lt;!DOCTYPE html&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">html</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">title</span>&gt;</span>Form with Error Handling<span class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"script.js"</span>&gt;</span><span class="undefined"></span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">form</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"myForm"</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">for</span>=<span class="hljs-string">"name"</span>&gt;</span>Name:<span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"text"</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"name"</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"name"</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">br</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">for</span>=<span class="hljs-string">"email"</span>&gt;</span>Email:<span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"email"</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"email"</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"email"</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">br</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"submit"</span> <span class="hljs-attr">value</span>=<span class="hljs-string">"Submit"</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">form</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"errorMessages"</span> <span class="hljs-attr">style</span>=<span class="hljs-string">"color: red;"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span>
+      </code></pre>
+      <ul>
+      <li><p>Chúng ta sẽ tạo một <strong>form</strong> đơn giản để nhập thông tin <strong>tên</strong> và <strong>email</strong> của người dùng. Chúng ta sẽ sử dụng <strong>JavaScript</strong> để kiểm tra dữ liệu ngay khi người dùng nhấn nút <strong>Submit</strong> và hiển thị thông báo lỗi nếu cần.</p>
+      <pre><code class="lang-js"><span class="hljs-built_in">document</span>.getElementById(<span class="hljs-string">"myForm"</span>).addEventListener(<span class="hljs-string">"submit"</span>, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">event</span>) </span>{
+        <span class="hljs-keyword">var</span> name = <span class="hljs-built_in">document</span>.getElementById(<span class="hljs-string">"name"</span>).value;
+        <span class="hljs-keyword">var</span> email = <span class="hljs-built_in">document</span>.getElementById(<span class="hljs-string">"email"</span>).value;
+        <span class="hljs-keyword">var</span> errorMessage = <span class="hljs-string">""</span>;
+      
+        <span class="hljs-keyword">if</span> (name === <span class="hljs-string">""</span>) {
+            errorMessage += <span class="hljs-string">"Name is required. "</span>;
+        }
+      
+        <span class="hljs-keyword">if</span> (email === <span class="hljs-string">""</span>) {
+            errorMessage += <span class="hljs-string">"Email is required. "</span>;
+        } <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> (!isValidEmail(email)) {
+            errorMessage += <span class="hljs-string">"Email is invalid. "</span>;
+        }
+      
+        <span class="hljs-keyword">if</span> (errorMessage !== <span class="hljs-string">""</span>) {
+            event.preventDefault(); <span class="hljs-comment">// Ngăn chặn việc submit nếu có lỗi</span>
+            <span class="hljs-built_in">document</span>.getElementById(<span class="hljs-string">"errorMessages"</span>).textContent = errorMessage;
+        }
+      });
+      
+      <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">isValidEmail</span>(<span class="hljs-params">email</span>) </span>{
+        <span class="hljs-comment">// Đây chỉ là một hàm đơn giản kiểm tra định dạng email, bạn cần hàm phức tạp hơn trong thực tế</span>
+        <span class="hljs-keyword">var</span> emailPattern = <span class="hljs-regexp">/^[^\s@]+@[^\s@]+\.[^\s@]+$/</span>;
+        <span class="hljs-keyword">return</span> emailPattern.test(email);
+      }
+      </code></pre>
+      </li>
+      <li>Chúng ta đã sử dụng <strong>JavaScript</strong> để ngăn việc <strong>submit</strong> form nếu có lỗi. Khi người dùng nhấn nút <strong>Submit</strong>, chúng ta kiểm tra dữ liệu nhập vào và hiển thị thông báo lỗi nếu cần. Hàm <code>isValidEmail</code> kiểm tra xem email có đúng định dạng không.</li>
+      </ul>
+      </li>
+      </ul>
+      </li>
+      <li><h2 id="formdata">FormData</h2>
+      <ul>
+      <li><h3 id="kh-i-ni-m">khái niệm</h3>
+      <ul>
+      <li>Là một đối tượng trong HTML và JavaScript, được sử dụng để tạo và quản lý dữ liệu của một form HTML để có thể gửi dữ liệu đó đến máy chủ thông qua một yêu cầu HTTP, thường là một yêu cầu POST</li>
+      <li>Thu thập dữ liệu từ các trường <code>input</code> trong form <strong>(như input text, checkbox, radio, file, v.v.)</strong> và tạo một dạng dữ liệu có thể gửi đi thông qua AJAX hoặc Fetch API một cách dễ dàng</li>
+      </ul>
+      </li>
+      <li><h3 id="c-ch-s-d-ng-c-b-n">cách sử dụng cơ bản</h3>
+      <ul>
+      <li><h5 id="html-form">HTML form</h5>
+      <ul>
+      <li><p>Trước hết, bạn cần có một form trong HTML để người dùng nhập thông tin.</p>
+      <pre><code class="lang-html"><span class="hljs-meta">&lt;!DOCTYPE html&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">html</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">title</span>&gt;</span>Basic FormData Example<span class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">form</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"myForm"</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">for</span>=<span class="hljs-string">"name"</span>&gt;</span>Name:<span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"text"</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"name"</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"name"</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">br</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">for</span>=<span class="hljs-string">"email"</span>&gt;</span>Email:<span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"email"</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"email"</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"email"</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">br</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"submit"</span> <span class="hljs-attr">value</span>=<span class="hljs-string">"Submit"</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">form</span>&gt;</span>
+      
+        <span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"script.js"</span>&gt;</span><span class="undefined"></span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span>
+      </code></pre>
+      </li>
+      </ul>
+      </li>
+      <li><h5 id="javascript-script-js-">Javascript(script.js)</h5>
+      <ul>
+      <li><p>Bạn cần viết mã JavaScript để xử lý form và gửi dữ liệu bằng <code>FormData</code></p>
+      <pre><code class="lang-js"><span class="hljs-built_in">document</span>.getElementById(<span class="hljs-string">"myForm"</span>).addEventListener(<span class="hljs-string">"submit"</span>, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">event</span>) </span>{
+        event.preventDefault(); <span class="hljs-comment">// Ngăn chặn việc submit mặc định của form</span>
+      
+        <span class="hljs-keyword">var</span> formData = <span class="hljs-keyword">new</span> FormData(<span class="hljs-keyword">this</span>); <span class="hljs-comment">// Tạo đối tượng FormData từ form</span>
+      
+        <span class="hljs-comment">// Gửi dữ liệu formData đến máy chủ bằng cách sử dụng AJAX hoặc Fetch API</span>
+        fetch(<span class="hljs-string">"process_form.php"</span>, {
+            <span class="hljs-attr">method</span>: <span class="hljs-string">"POST"</span>,
+            <span class="hljs-attr">body</span>: formData
+        })
+        .then(<span class="hljs-function"><span class="hljs-params">response</span> =&gt;</span> response.text())
+        .then(<span class="hljs-function"><span class="hljs-params">result</span> =&gt;</span> {
+            <span class="hljs-built_in">console</span>.log(result); <span class="hljs-comment">// Xử lý kết quả từ máy chủ</span>
+        })
+        .catch(<span class="hljs-function"><span class="hljs-params">error</span> =&gt;</span> {
+            <span class="hljs-built_in">console</span>.error(error);
+        });
+      });
+      </code></pre>
+      </li>
+      </ul>
+      </li>
+      <li><h5 id="x-l-m-y-ch-process_form-php-">Xử lý máy chủ(process_form.php)</h5>
+      <ul>
+      <li><p>Trên máy chủ, bạn có thể sử dụng <code>$_POST</code> để truy cập dữ liệu được gửi từ form</p>
+      <pre><code class="lang-php"><span class="php"><span class="hljs-meta">&lt;?php</span>
+      <span class="hljs-keyword">if</span> ($_SERVER[<span class="hljs-string">"REQUEST_METHOD"</span>] == <span class="hljs-string">"POST"</span>) {
+        $name = $_POST[<span class="hljs-string">"name"</span>];
+        $email = $_POST[<span class="hljs-string">"email"</span>];
+      
+        <span class="hljs-comment">// Xử lý dữ liệu ở đây (lưu vào cơ sở dữ liệu, gửi email, v.v.)</span>
+        <span class="hljs-comment">// ...</span>
+      
+        <span class="hljs-keyword">echo</span> <span class="hljs-string">"Data received and processed successfully."</span>;
+      }
+      <span class="hljs-meta">?&gt;</span></span>
+      </code></pre>
+      </li>
+      </ul>
+      </li>
+      <li>Trong ví dụ này, khi người dùng nhấn nút <strong>Submit</strong>, sự kiện submit form được bắt và mã JavaScript tạo một đối tượng <code>FormData</code> từ form. Sau đó, dữ liệu này được gửi đến máy chủ bằng Fetch API. Phía máy chủ sử dụng <code>$_POST</code> để truy cập dữ liệu và xử lý nó.<h1 id="x-l-data-table-hi-n-th-d-li-u-ph-n-trang">Xữ lý data table (Hiển thị dữ liệu), phân trang</h1>
+      </li>
+      </ul>
+      </li>
+      </ul>
+      </li>
+      <li>Xử lý dữ liệu trong một data table trong HTML bao gồm việc <strong>thêm, sửa, xóa và tìm kiếm dữ liệu</strong>. Thường thì việc xử lý dữ liệu này sẽ sử dụng JavaScript để tạo tương tác trực tiếp trên trang web.</li>
+      <li><h2 id="c-ch-s-l-c-b-n-b-ng-javascript">Cách sử lý cơ bản bằng javascript</h2>
+      <ul>
+      <li><h5 id="html-table">HTML Table</h5>
+      <pre><code class="lang-html">  <span class="hljs-meta">&lt;!DOCTYPE html&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">html</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">title</span>&gt;</span>Basic Data Table Handling Example<span class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"script.js"</span>&gt;</span><span class="undefined"></span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">table</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"dataTable"</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">thead</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">tr</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">th</span>&gt;</span>Name<span class="hljs-tag">&lt;/<span class="hljs-name">th</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">th</span>&gt;</span>Email<span class="hljs-tag">&lt;/<span class="hljs-name">th</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">th</span>&gt;</span>Action<span class="hljs-tag">&lt;/<span class="hljs-name">th</span>&gt;</span>
+                    <span class="hljs-tag">&lt;/<span class="hljs-name">tr</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-name">thead</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">tbody</span>&gt;</span>
+                    <span class="hljs-comment">&lt;!-- Dữ liệu sẽ được thêm bằng JavaScript --&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-name">tbody</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">table</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"addRow"</span>&gt;</span>Add Row<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span>
+      </code></pre>
+      </li>
+      <li><h5 id="javascript-script-js-">Javascript(script.js)</h5>
+      <ul>
+      <li><p>Bạn cần viết mã JavaScript để xử lý việc thêm và xóa dữ liệu từ bảng</p>
+      <pre><code class="lang-js">  document.getElementById(<span class="hljs-string">"addRow"</span>).addEventListener(<span class="hljs-string">"click"</span>, <span class="hljs-function"><span class="hljs-keyword">function</span></span>() {
+            <span class="hljs-keyword">var</span> table = document.getElementById(<span class="hljs-string">"dataTable"</span>).getElementsByTagName(<span class="hljs-string">'tbody'</span>)[<span class="hljs-number">0</span>];
+            <span class="hljs-keyword">var</span> <span class="hljs-keyword">new</span><span class="hljs-type">Row</span> = table.insertRow(table.rows.length);
+      
+            <span class="hljs-keyword">var</span> nameCell = <span class="hljs-keyword">new</span><span class="hljs-type">Row</span>.insertCell(<span class="hljs-number">0</span>);
+            <span class="hljs-keyword">var</span> emailCell = <span class="hljs-keyword">new</span><span class="hljs-type">Row</span>.insertCell(<span class="hljs-number">1</span>);
+            <span class="hljs-keyword">var</span> actionCell = <span class="hljs-keyword">new</span><span class="hljs-type">Row</span>.insertCell(<span class="hljs-number">2</span>);
+      
+            nameCell.innerHTML = <span class="hljs-string">"New Name"</span>;
+            emailCell.innerHTML = <span class="hljs-string">"new@example.com"</span>;
+            actionCell.innerHTML = <span class="hljs-string">'&lt;button
+            onclick="deleteRow(this)"&gt;Delete&lt;/button&gt;'</span>;
+                });
+      
+                <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">deleteRow</span></span>(button) {
+                    <span class="hljs-keyword">var</span> row = button.parentNode.parentNode;
+                    row.parentNode.removeChild(row);
+                }
+      </code></pre>
+      </li>
+      <li>Khi bạn mở trang HTML và nhấn vào nút &quot;Add Row&quot;, một dòng mới sẽ được thêm vào bảng với tùy chọn xóa dòng. Khi bạn nhấn vào nút &quot;Delete&quot; trong dòng, dòng đó sẽ bị xóa khỏi bảng.</li>
+      <li>Chúng ta đã sử dụng JavaScript để thêm và xóa dữ liệu từ bảng. Hàm <code>insertRow</code> và <code>insertCell</code> được sử dụng để thêm dòng và ô dữ liệu vào bảng. Hàm <code>deleteRow</code> được sử dụng để xóa dòng dựa trên nút xóa trong cùng một dòng.</li>
+      </ul>
+      </li>
+      </ul>
+      </li>
+      <li><h2 id="ph-n-trang">Phân trang</h2>
+      <ul>
+      <li>Phân trang trong form và table thường áp dụng khi bạn có một lượng lớn dữ liệu cần hiển thị hoặc quản lý, và bạn muốn chia thành các trang nhỏ để giúp người dùng dễ dàng điều hướng và tìm kiếm thông tin</li>
+      <li>Cách thực hiện phân trang trong bảng và form bằng javascript<ul>
+      <li><h5 id="html-table-v-form">HTML Table và form</h5>
+         Bắt đầu bằng việc tạo một bảng và một form trong HTML để hiển thị dữ liệu và phân trang<pre><code class="lang-html"><span class="hljs-meta">&lt;!DOCTYPE html&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">html</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">title</span>&gt;</span>Pagination Example<span class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"script.js"</span>&gt;</span><span class="undefined"></span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">form</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"paginationForm"</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">for</span>=<span class="hljs-string">"perPage"</span>&gt;</span>Items per Page:<span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">select</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"perPage"</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">option</span> <span class="hljs-attr">value</span>=<span class="hljs-string">"2"</span>&gt;</span>2<span class="hljs-tag">&lt;/<span class="hljs-name">option</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">option</span> <span class="hljs-attr">value</span>=<span class="hljs-string">"5"</span>&gt;</span>5<span class="hljs-tag">&lt;/<span class="hljs-name">option</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">option</span> <span class="hljs-attr">value</span>=<span class="hljs-string">"10"</span>&gt;</span>10<span class="hljs-tag">&lt;/<span class="hljs-name">option</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">select</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"button"</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"prevPage"</span>&gt;</span>Previous<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"button"</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"nextPage"</span>&gt;</span>Next<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">form</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">table</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"dataTable"</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">thead</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">tr</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">th</span>&gt;</span>Name<span class="hljs-tag">&lt;/<span class="hljs-name">th</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">th</span>&gt;</span>Email<span class="hljs-tag">&lt;/<span class="hljs-name">th</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-name">tr</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">thead</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">tbody</span>&gt;</span>
+                <span class="hljs-comment">&lt;!-- Dữ liệu sẽ được thêm bằng JavaScript --&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">tbody</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">table</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span>
+      </code></pre>
+      </li>
+      </ul>
+      </li>
+      <li><h5 id="javascript-script-js-">Javascript (script.js)</h5>
+      <ul>
+      <li><p>Sau đó, bạn cần viết mã JavaScript để thực hiện phân trang bằng việc thêm và xóa dữ liệu từ bảng</p>
+      <pre><code class="lang-js">  <span class="hljs-keyword">var</span> data = [
+            { <span class="hljs-attr">name</span>: <span class="hljs-string">"John Doe"</span>, <span class="hljs-attr">email</span>: <span class="hljs-string">"john@example.com"</span> },
+            { <span class="hljs-attr">name</span>: <span class="hljs-string">"Jane Smith"</span>, <span class="hljs-attr">email</span>: <span class="hljs-string">"jane@example.com"</span> },
+                    <span class="hljs-comment">// Các dòng dữ liệu khác</span>
+        ];
+      
+            <span class="hljs-keyword">var</span> itemsPerPage = <span class="hljs-number">2</span>; <span class="hljs-comment">// Số mục hiển thị trên mỗi trang</span>
+            <span class="hljs-keyword">var</span> currentPage = <span class="hljs-number">0</span>;
+      
+            <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">displayData</span>(<span class="hljs-params">page</span>) </span>{
+                <span class="hljs-keyword">var</span> table= <span class="hljs-built_in">document</span>.getElementById(<span class="hljs-string">"dataTable"</span>).getElementsByTagName(<span class="hljs-string">'tbody'</span>)[<span class="hljs-number">0</span>];
+                table.innerHTML = <span class="hljs-string">""</span>; <span class="hljs-comment">// Xóa dữ liệu cũ</span>
+      
+                <span class="hljs-keyword">var</span> startIndex = page * itemsPerPage;
+                <span class="hljs-keyword">var</span> endIndex = startIndex + itemsPerPage;
+                    <span class="hljs-keyword">for</span> (<span class="hljs-keyword">var</span> i = startIndex; i &lt; endIndex &amp;&amp; i &lt; data.length; i++) {
+                        <span class="hljs-keyword">var</span> row = table.insertRow(table.rows.length);
+                        <span class="hljs-keyword">var</span> nameCell = row.insertCell(<span class="hljs-number">0</span>);
+                        <span class="hljs-keyword">var</span> emailCell = row.insertCell(<span class="hljs-number">1</span>);
+      
+                        nameCell.innerHTML = data[i].name;
+                        emailCell.innerHTML = data[i].email;
+                }
+            }
+      
+                displayData(currentPage); <span class="hljs-comment">// Hiển thị trang đầu tiên</span>
+      
+                <span class="hljs-built_in">document</span>.getElementById(<span class="hljs-string">"prevPage"</span>).addEventListener(<span class="hljs-string">"click"</span>, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
+                    <span class="hljs-keyword">if</span> (currentPage &gt; <span class="hljs-number">0</span>) {
+                        currentPage--;
+                        displayData(currentPage);
+                    }
+                });
+      
+                <span class="hljs-built_in">document</span>.getElementById(<span class="hljs-string">"nextPage"</span>).addEventListener(<span class="hljs-string">"click"</span>, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
+                    <span class="hljs-keyword">var</span> maxPage = <span class="hljs-built_in">Math</span>.ceil(data.length / itemsPerPage) - <span class="hljs-number">1</span>;
+                    <span class="hljs-keyword">if</span> (currentPage &lt; maxPage) {
+                        currentPage++;
+                        displayData(currentPage);
+                    }
+                });
+      
+                <span class="hljs-built_in">document</span>.getElementById(<span class="hljs-string">"perPage"</span>).addEventListener(<span class="hljs-string">"change"</span>, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
+                    itemsPerPage = <span class="hljs-built_in">parseInt</span>(<span class="hljs-keyword">this</span>.value);
+                    displayData(currentPage);
+                });
+      </code></pre>
+      </li>
+      <li>Khi bạn mở trang HTML, bạn sẽ thấy dữ liệu trong bảng được phân trang. Bạn có thể điều hướng giữa các trang bằng nút <strong>&quot;Previous&quot;</strong> và <strong>&quot;Next&quot;</strong>, và bạn cũng có thể chọn số lượng mục hiển thị trên mỗi trang bằng cách chọn từ danh sách thả xuống.</li>
+      <li>Chúng ta đã sử dụng JavaScript để thực hiện phân trang cho dữ liệu trong bảng. Dữ liệu được lưu trong mảng <code>data</code>. Các sự kiện nhấn nút và thay đổi lựa chọn được sử dụng để thay đổi số lượng mục hiển thị trên mỗi trang và điều hướng giữa các trang.</li>
+      </ul>
+      </li>
+      </ul>
+      </li>
+      </ul>
+      <h1 id="inline-v-block" class="document-section">Inline và Block</h1>
+      <ul>
+      <li><p>Trong HTML, các phần tử cũng có thể được phân loại thành &quot;inline&quot; và &quot;block&quot; dựa trên cách chúng hiển thị trên trang web. Dưới đây là sự phân biệt giữa các phần tử &quot;inline&quot; và &quot;block&quot; trong HTML</p>
+      <ul>
+      <li><h3 id="inline-elements-ph-n-t-inline-">Inline Elements (Phần tử inline)</h3>
+      <ul>
+      <li><strong>Khái niệm:</strong> Các phần tử &quot;inline&quot; là những phần tử mà chúng hiển thị cùng một dòng với các phần tử khác, mà không làm ngắt dòng. Chúng chỉ chiếm một phần không gian cần thiết để chứa nội dung bên trong.    </li>
+      <li><strong>Ví dụ:</strong> Các phần tử inline thường là các phần tử văn bản như <code>&lt;span&gt;</code>, <code>&lt;a&gt;</code>, <code>&lt;strong&gt;</code>, <code>&lt;em&gt;</code>, <code>&lt;img&gt;</code>, và nhiều phần tử văn bản khác.<ul>
+      <li><strong>Đặc điểm:</strong><ul>
+      <li>Không tạo một khung chứa riêng biệt, nếu có nhiều phần tử inline liên tiếp, chúng sẽ hiển thị trên cùng một dòng.</li>
+      <li>Không thể đặt chiều rộng và chiều cao cho phần tử inline.</li>
+      <li>Không thể thêm margin trên và dưới, nhưng có thể thêm margin bên trái và bên phải.</li>
+      <li>Không thể đặt các thuộc tính <code>width</code> và <code>height</code>.</li>
+      </ul>
+      </li>
+      </ul>
+      </li>
+      </ul>
+      </li>
+      <li><h3 id="block-elements-ph-n-t-block-">Block Elements (Phần tử block)</h3>
+      <ul>
+      <li><strong>Khái niệm:</strong> Các phần tử &quot;block&quot; là những phần tử mà chúng hiển thị trên một dòng riêng biệt và tạo một khung chứa mới. Chúng làm ngắt dòng và chiếm toàn bộ chiều rộng của khung chứa mà chúng nằm trong.</li>
+      <li><strong>Ví dụ:</strong> Các phần tử block thường là các phần tử cấu trúc như <code>&lt;div&gt;</code>, <code>&lt;p&gt;</code>, <code>&lt;h1&gt;</code>-<code>&lt;h6&gt;</code>, <code>&lt;ul&gt;</code>, <code>&lt;li&gt;</code>, và nhiều phần tử cấu trúc khác.</li>
+      <li><strong>Đặc điểm:</strong><ul>
+      <li>Tạo một khung chứa mới và hiển thị trên một dòng riêng biệt.</li>
+      <li>Chiếm toàn bộ chiều rộng của khung chứa mà chúng nằm trong.</li>
+      <li>Có thể đặt chiều rộng và chiều cao cho phần tử block.</li>
+      <li>Có thể thêm padding, margin, và border theo cả hai hướng dọc và ngang</li>
+      </ul>
+      </li>
+      </ul>
+      </li>
+      </ul>
+      </li>
+      </ul>
+    </div>
+  </div>
+ 
+
+
+
+
+
+
+
+
+
+
+
+  <footer class="bg-dark py-4">
+    <div class="footer">
+      <div class="row">
+        <div class="col-md-6">
+          <p>&copy; 2023 Your Company. All rights reserved.</p>
+          <a href="#">Privacy Policy</a> | <a href="#">Terms of Use</a>
+        </div>
+        <div class="col-md-6 text-md-right">
+          <p>Contact: info@example.com</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>

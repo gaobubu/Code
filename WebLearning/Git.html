@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/default.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/languages/go.min.js"></script>  
+    <script>hljs.highlightAll();</script>
+    <script src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
+    <title>EXERCITE</title>
+</head>
+<body>
+  <header>
+    <div class="logo">My Website</div>
+    <nav class="navigation">
+      <a href="#">A</a>
+      <a href="#">B</a>
+      <a href="#">C</a>
+      <a href="#">D</a>
+      <a href="#">E</a>
+    </nav>
+  </header>
+  <div class="container">
+    <div id="sticky-table">
+      <div id="sticky">
+        <a href="#git-n-i-l-u-tr-phi-n-b-n-" class="doc-title">Khái niệm và cách sử dụng</a>
+        <a href="#c-c-c-u-l-nh-th-ng-d-ng-create-delete-branch-pull-push-stash-merge-check-out-" class="doc-title">Các câu lệnh thường dùng</a>
+        <a href="#local-repo-and-remote-repo" class="doc-title">Local repo & Remote repo</a>
+      </div>
+    </div>
+    <div id="sidebar">
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingOne">
+          <button class="accordion-button dropdown-toggle" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+            HTML, CSS, JavaScript
+          </button>
+        </h2>
+        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+          <div class="accordion-body " >
+            <a href="html.html">HTML</a>
+          </div>
+        </div>
+        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            <a href="Css.html">CSS</a>
+          </div>
+        </div>
+        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            <a href="JavaScript.html">JavaScript</a>
+          </div>
+        </div>
+      </div>
+        
+            
+      <div class="accordion-item">
+       <h2 class="accordion-header" id="headingTwo">
+          <button class="accordion-button dropdown-toggle" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+            Client, Server, Git
+          </button>
+          </h2>
+        <div id="collapseTwo" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+          <div class="accordion-body ">
+            <a href="HTTP.html">HTTP request</a>
+			
+          </div>
+        </div>
+        <div id="collapseTwo" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            <a href="Client&Server.html">Client & Server</a>
+          </div>
+        </div>
+        <div id="collapseTwo" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+          <div class="accordion-body active">
+            <a href="Git.html " >Git</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+		<div id="Content-doc" class="document-content">
+            <h1 id="git-n-i-l-u-tr-phi-n-b-n-" class="document-section">GIT (nơi lưu trữ phiên bản)</h1>
+<ul>
+<li><h2 id="kh-i-ni-m">Khái niệm</h2>
+<ul>
+<li>Git là một hệ thống quản lý phiên bản phân tán <strong>(DVCS - Distributed Version Control System)</strong>. Nó được sử dụng rộng rãi trong quản lý mã nguồn và dự án phát triển phần mềm để theo dõi, quản lý và hợp nhất mã nguồn từ nhiều người tham gia.</li>
+<li><p>Dưới đây là 1 số khái niệm quan trọng nằm trong GIT</p>
+<ol>
+<li><p><strong>Repository (Repo):</strong> Là nơi lưu trữ toàn bộ lịch sử, mã nguồn và các thông tin về dự án. Repository có thể là local (trên máy cá nhân) hoặc remote (trên máy chủ xa).</p>
+</li>
+<li><p><strong>Commit:</strong> Là một &quot;snapshot&quot; của mã nguồn tại một thời điểm cụ thể. Mỗi commit bao gồm các thay đổi trong mã nguồn và thông tin về người thực hiện commit và thời gian.</p>
+</li>
+<li><p><strong>Branch:</strong> Là một nhánh riêng biệt của dự án, cho phép phát triển đồng thời các tính năng, sửa lỗi hoặc thay đổi mà không ảnh hưởng đến nhánh chính.</p>
+</li>
+<li><p><strong>Merge:</strong> Là quá trình kết hợp nội dung từ một nhánh vào nhánh khác, thường được thực hiện để tích hợp các tính năng hoặc sửa lỗi vào nhánh chính.</p>
+</li>
+<li><p><strong>Pull Request (PR):</strong> Là một yêu cầu để hợp nhất thay đổi từ một nhánh vào nhánh khác (thường từ nhánh con vào nhánh chính). Điều này thường được sử dụng trong quy trình làm việc đội.</p>
+</li>
+<li><p><strong>Clone:</strong> Là quá trình sao chép toàn bộ repository từ remote xuống local, cho phép bạn làm việc với dự án trên máy tính cá nhân.</p>
+</li>
+<li><p><strong>Push:</strong> Là quá trình đẩy các thay đổi từ máy tính local lên remote repository, cập nhật các thay đổi của bạn trên dự án chia sẻ.</p>
+</li>
+<li><p><strong>Pull:</strong> Là quá trình kéo các thay đổi từ remote repository xuống máy tính local của bạn.</p>
+</li>
+<li><p><strong>Conflict:</strong> Xảy ra khi Git không thể tự động hợp nhất các thay đổi do có xung đột giữa các phiên bản. Người dùng phải giải quyết xung đột bằng cách sửa mã nguồn thủ công.</p>
+</li>
+</ol>
+</li>
+</ul>
+</li>
+<li><h2 id="c-ch-s-d-ng-git">Cách sử dụng GIT</h2>
+<ol>
+<li><strong>Cài đặt Git:</strong><ul>
+<li>Trước hết, bạn cần cài đặt Git trên máy tính của mình. Bạn có thể tải Git từ trang chính thức của nó: <a href="https://git-scm.com/downloads">https://git-scm.com/downloads</a></li>
+</ul>
+</li>
+<li><strong>Tạo Repository (Repo):</strong><ul>
+<li>Để bắt đầu sử dụng Git, bạn cần tạo một thư mục để chứa dự án. Sau đó, mở Command Line hoặc Terminal và di chuyển đến thư mục dự án bằng lệnh <code>cd</code>.</li>
+</ul>
+</li>
+<li><strong>Khởi tạo Repository:</strong><ul>
+<li>Sử dụng lệnh sau để khởi tạo một repository trong thư mục dự án: <pre><code><span class="hljs-attribute">  git init</span>
+</code></pre></li>
+</ul>
+</li>
+<li><strong>Thêm và Commit:</strong><ul>
+<li>Sử dụng lệnh <code>git add</code> để thêm các tệp và thay đổi vào vùng chờ (staging area) để chuẩn bị commit:<pre><code>  git <span class="hljs-keyword">add</span><span class="bash"> &lt;tên_tệp&gt;   <span class="hljs-comment"># Thêm tệp cụ thể </span>
+</span>  git <span class="hljs-keyword">add</span><span class="bash"> .           <span class="hljs-comment"># Thêm tất cả các tệp và thay đổi</span></span>
+</code></pre></li>
+<li>Sau đó, sử dụng lệnh <code>git commit</code> để tạo một commit:<pre><code>  <span class="hljs-attribute">git</span> commit -m <span class="hljs-string">"Thông điệp commit"</span>
+</code></pre></li>
+</ul>
+</li>
+<li><strong>Tạo và Quản lý Nhánh:</strong><ul>
+<li>Để tạo một nhánh mới, sử dụng lệnh:<pre><code>  git <span class="hljs-keyword">branch </span>&lt;tên_nhánh&gt;
+</code></pre></li>
+<li>Để chuyển đổi sang một nhánh khác, sử dụng lệnh:<pre><code>  git checkout <span class="hljs-tag">&lt;<span class="hljs-name">tên_nhánh</span>&gt;</span>
+</code></pre></li>
+<li>Sau khi hoàn thành công việc trên nhánh con, bạn có thể hợp nhất (merge) vào nhánh chính bằng cách:<pre><code>  git checkout <span class="hljs-tag">&lt;<span class="hljs-name">nhánh_chính</span>&gt;</span> git merge <span class="hljs-tag">&lt;<span class="hljs-name">nhánh_con</span>&gt;</span>
+</code></pre></li>
+</ul>
+</li>
+<li><p><strong>Remote Repository:</strong></p>
+<ul>
+<li><p>Nếu bạn muốn làm việc trên remote repository (trên máy chủ xa), bạn cần sao chép nó về local sử dụng lệnh:</p>
+<pre><code>  git <span class="hljs-keyword">clone</span> <span class="hljs-title">&lt;url_remote_repo</span>&gt;
+</code></pre></li>
+<li><p>Để đẩy (push) các commit từ local lên remote, sử dụng lệnh:</p>
+<pre><code>  git <span class="hljs-built_in">push</span> <span class="hljs-built_in">origin</span> &lt;tên_nhánh&gt;
+</code></pre></li>
+</ul>
+</li>
+<li><p><strong>Cập Nhật và Đồng Bộ:</strong></p>
+<ul>
+<li>Để cập nhật dự án từ remote, sử dụng lệnh:<pre><code>  git pull origin <span class="hljs-tag">&lt;<span class="hljs-name">tên_nhánh</span>&gt;</span>
+</code></pre></li>
+</ul>
+</li>
+</ol>
+</li>
+<li><h2 class="document-section" id="c-c-c-u-l-nh-th-ng-d-ng-create-delete-branch-pull-push-stash-merge-check-out-">Các câu lệnh thường dùng (create/delete branch, pull, push, stash, merge, check out,..)</h2>
+<ol>
+<li><strong>Khởi tạo và Cấu hình:</strong><ul>
+<li><code>git init</code>: Khởi tạo một repository mới trong thư mục hiện tại.</li>
+<li><code>git config</code>: Cấu hình Git (tên, email, cấu hình hệ thống, v.v.).</li>
+</ul>
+</li>
+<li><p><strong>Cơ bản về Commit:</strong></p>
+<ul>
+<li><code>git add</code>: Thêm tệp và thay đổi vào vùng chờ (staging area).</li>
+<li><code>git commit</code>: Tạo một commit với các thay đổi đã thêm và ghi chú.</li>
+<li><code>git commit -m &quot;Thông điệp commit&quot;</code>: Tạo commit với thông điệp ngắn.</li>
+</ul>
+</li>
+<li><strong>Nhánh (Branch):</strong>        <ul>
+<li><code>git branch</code>: Liệt kê các nhánh hiện có.</li>
+<li><code>git branch &lt;tên_nhánh&gt;</code>: Tạo một nhánh mới.</li>
+<li><code>git checkout &lt;tên_nhánh&gt;</code>: Chuyển đổi sang một nhánh khác.</li>
+<li><code>git merge &lt;nhánh_khác&gt;</code>: Hợp nhất các thay đổi từ một nhánh vào nhánh hiện tại.</li>
+<li><code>git branch -d &lt;tên_nhánh&gt;</code>: Xóa một nhánh đã hợp nhất.</li>
+</ul>
+</li>
+<li><strong>Đồng bộ với Remote:</strong>        <ul>
+<li><code>git clone &lt;url_remote_repo&gt;</code>: Sao chép một remote repository về local.</li>
+<li><code>git pull</code>: Kéo các thay đổi mới nhất từ remote và hợp nhất vào nhánh hiện tại.</li>
+<li><code>git push</code>: Đẩy các thay đổi từ local lên remote repository.</li>
+</ul>
+</li>
+<li><strong>Xử lý Thay đổi Tạm thời:</strong>        <ul>
+<li><code>git stash</code>: Lưu trạng thái hiện tại của thay đổi tạm thời để làm việc khác.</li>
+<li><code>git stash apply</code>: Áp dụng trạng thái tạm thời đã lưu trước đó.</li>
+<li><code>git stash pop</code>: Áp dụng và xóa trạng thái tạm thời khỏi danh sách.</li>
+</ul>
+</li>
+<li><strong>Thông tin và Lịch sử:</strong>    <ul>
+<li><code>git log</code>: Hiển thị lịch sử commit.</li>
+<li><code>git diff</code>: Hiển thị sự khác biệt giữa các thay đổi chưa được commit.</li>
+<li><code>git status</code>: Hiển thị trạng thái của vùng chờ và thư mục làm việc hiện tại.</li>
+</ul>
+</li>
+<li><strong>Xử lý Xung đột (Conflict):</strong>        <ul>
+<li>Khi có xung đột, bạn cần giải quyết thủ công trong các tệp có xung đột sau đó thêm và commit lại.</li>
+</ul>
+</li>
+<li><strong>Thông tin về Remote:</strong>        <ul>
+<li><code>git remote -v</code>: Liệt kê các remote repository đã cấu hình.</li>
+<li><code>git remote add &lt;tên_remote&gt; &lt;url_remote&gt;</code>: Thêm một remote mới.</li>
+</ul>
+</li>
+<li><strong>Undo và Amend:</strong>    <ul>
+<li><code>git reset HEAD &lt;tên_tệp&gt;</code>: Hủy các thay đổi đã thêm vào vùng chờ.</li>
+<li><code>git commit --amend</code>: Chỉnh sửa commit gần nhất hoặc kết hợp thay đổi vào commit đang hiệu chỉnh.</li>
+</ul>
+</li>
+</ol>
+</li>
+</ul>
+<h1 id="local-repo-and-remote-repo" class="document-section">Local repo and remote repo</h1>
+<ul>
+<li><h3 id="local-repo-local-repository-">local repo (local repository)</h3>
+<ul>
+<li>phiên bản của dự án hoặc mã nguồn của bạn được lưu trữ trên máy tính cá nhân hoặc máy chủ cục bộ. </li>
+<li>Nó là nơi bạn thực hiện công việc phát triển, tạo và lưu trữ các thay đổi, quản lý lịch sử commit và thực hiện nhiều hoạt động khác liên quan đến quản lý phiên bản. </li>
+<li>Local repo không phụ thuộc vào internet hoặc máy chủ xa, và bạn có thể làm việc với nó mà không cần kết nối mạng.</li>
+<li><h5 id="c-ch-s-d-ng-local-repository-">Cách sử dụng Local Repository:</h5>
+<ol>
+<li><strong>Khởi tạo Local Repo:</strong><ul>
+<li>Để bắt đầu, bạn cần khởi tạo một local repository trong thư mục dự án của bạn. Sử dụng lệnh <code>git init</code> để khởi tạo local repo.</li>
+</ul>
+</li>
+<li><strong>Thêm và Commit Thay đổi:</strong><ul>
+<li>Sau khi thực hiện các thay đổi trong mã nguồn của bạn, bạn sử dụng lệnh <code>git add</code> để thêm thay đổi vào vùng chờ (staging area), sau đó sử dụng <code>git commit</code> để tạo một commit chứa các thay đổi đã thêm.</li>
+</ul>
+</li>
+<li><strong>Tạo và Quản lý Nhánh:</strong><ul>
+<li>Sử dụng lệnh <code>git branch</code> để liệt kê, tạo, hoặc xóa các nhánh trong local repo. Bạn có thể sử dụng <code>git checkout</code> để chuyển đổi giữa các nhánh.</li>
+</ul>
+</li>
+<li><strong>Xử lý Xung đột:</strong><ul>
+<li>Trong trường hợp xảy ra xung đột giữa các thay đổi trong các nhánh khác nhau, bạn cần giải quyết xung đột thủ công bằng cách chỉnh sửa tệp có xung đột và sau đó commit lại.</li>
+</ul>
+</li>
+<li><strong>Tạo Thay đổi Tạm thời (Stash):</strong><ul>
+<li>Sử dụng <code>git stash</code> để lưu trạng thái hiện tại của thay đổi tạm thời khi bạn muốn chuyển sang một nhiệm vụ khác mà không muốn commit các thay đổi.</li>
+</ul>
+</li>
+<li><strong>Xem Lịch sử và Sự khác biệt:</strong><ul>
+<li>Sử dụng <code>git log</code> để xem lịch sử commit và <code>git diff</code> để xem sự khác biệt giữa các thay đổi chưa được commit.</li>
+</ul>
+</li>
+<li><strong>Kết nối với Remote Repo:</strong><ul>
+<li>Để chia sẻ và làm việc cộng tác với đồng đội, bạn có thể đẩy các thay đổi từ local repo lên remote repo sử dụng <code>git push</code> và kéo các thay đổi từ remote repo về local repo sử dụng <code>git pull</code>.</li>
+</ul>
+</li>
+</ol>
+<blockquote>
+<p>Local repository là nơi bạn làm việc chính trong quá trình phát triển và quản lý mã nguồn, cho phép bạn kiểm soát hoàn toàn quá trình làm việc và thử nghiệm thay đổi trước khi chia sẻ với đồng đội hoặc đẩy lên remote repository.</p>
+</blockquote>
+</li>
+</ul>
+</li>
+<li><h3 id="remote-repo-remote-repository-">remote repo (remote repository)</h3>
+<ul>
+<li>phiên bản của dự án hoặc mã nguồn của bạn được lưu trữ trên máy chủ xa, thường là một dịch vụ quản lý phiên bản như GitHub, GitLab, Bitbucket hoặc máy chủ riêng của bạn. </li>
+<li>Remote repo chứa toàn bộ lịch sử commit, các nhánh, tệp, và thông tin khác liên quan đến dự án.</li>
+<li>Nó cho phép bạn chia sẻ mã nguồn với đồng đội, làm việc cộng tác, và triển khai dự án.</li>
+<li><h5 id="c-ch-s-d-ng-remote-repository">Cách sử dụng Remote Repository</h5>
+<ol>
+<li><strong>Tạo Remote Repo:</strong><ul>
+<li>Trước tiên, bạn cần tạo một remote repository trên dịch vụ quản lý phiên bản như GitHub hoặc GitLab. Trong trường hợp bạn sử dụng máy chủ riêng, bạn cần cài đặt và cấu hình phần mềm quản lý phiên bản.</li>
+</ul>
+</li>
+<li><strong>Kết nối Local Repo với Remote Repo:</strong><ul>
+<li>Sử dụng lệnh <code>git remote add &lt;tên_remote&gt; &lt;url_remote&gt;</code> để kết nối local repo với remote repo. Tên remote thường là &quot;origin&quot;.</li>
+</ul>
+</li>
+<li><strong>Đẩy Thay đổi lên Remote Repo:</strong><ul>
+<li>Khi bạn đã tạo các commit trong local repo và muốn chia sẻ thay đổi với đồng đội hoặc lưu trữ, bạn sử dụng lệnh <code>git push &lt;tên_remote&gt; &lt;tên_nhánh&gt;</code> để đẩy các commit lên remote repo.</li>
+</ul>
+</li>
+<li><strong>Kéo Thay đổi từ Remote Repo:</strong><ul>
+<li>Để cập nhật local repo với những thay đổi mới từ remote repo, bạn sử dụng lệnh <code>git pull &lt;tên_remote&gt; &lt;tên_nhánh&gt;</code>.</li>
+</ul>
+</li>
+<li><strong>Fork và Pull Request:</strong><ul>
+<li>Trên các dịch vụ quản lý phiên bản như GitHub, bạn có thể fork (bản sao) remote repo của người khác và sau đó tạo pull request để đề xuất các thay đổi vào repo gốc.</li>
+</ul>
+</li>
+<li><strong>Làm việc Cộng tác:</strong><ul>
+<li>Remote repo cho phép bạn và đồng đội làm việc cùng nhau trên cùng một dự án. Bạn có thể tạo và hợp nhất nhánh, thực hiện review code, giải quyết xung đột và thực hiện nhiều hoạt động khác.</li>
+</ul>
+</li>
+<li><strong>Triển Khai Dự án:</strong><ul>
+<li>Khi dự án đã hoàn thành hoặc muốn triển khai, bạn có thể sử dụng remote repo để triển khai mã nguồn lên môi trường thực tế.</li>
+</ul>
+</li>
+</ol>
+<blockquote>
+<p>Remote repository giúp bạn tạo một nơi trung tâm để lưu trữ và quản lý mã nguồn của dự án, cho phép làm việc cộng tác và triển khai dự án một cách hiệu quả.</p>
+</blockquote>
+</li>
+</ul>
+<ul>
+<li><strong><em>Tóm lại, local repo là nơi bạn làm việc và thực hiện thay đổi trong dự án cá nhân. Remote repo là nơi lưu trữ chính thức của dự án trên máy chủ xa, được sử dụng để chia sẻ và làm việc cộng tác.</em></strong></li>
+</ul>
+</li>
+</ul>
+
+		</div>
+  </div>
+ 
+  <footer class="bg-dark py-4">
+    <div class="footer">
+      <div class="row">
+
+        <div class="col-md-6">
+          <p>&copy; 2023 Your Company</p>
+        </div>
+        <div class="col-md-6 text-md-right">
+          <p>Contact: info@example.com</p>
+        </div>
+        <div class="col-md-6 text-md-right"  style="margin: 0 30% 0 30%;">
+          <a href="#">Privacy Policy</a> | 
+          <a href="#">Terms of Use</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>

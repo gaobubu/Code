@@ -1,0 +1,1305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/default.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/languages/go.min.js"></script>  
+    <script>hljs.highlightAll();</script>
+    <script src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
+    <title>EXERCITE</title>
+</head>
+<body>
+  <header>
+    <div class="logo">My Website</div>
+    <nav class="navigation">
+      <a href="#">A</a>
+      <a href="#">B</a>
+      <a href="#">C</a>
+      <a href="#">D</a>
+      <a href="#">E</a>
+    </nav>
+  </header>
+  <div class="container">
+    <div id="sticky-table">
+      <div id="sticky">
+        <a href="#kh-i-ni-m" class="doc-title">Khái niệm</a>
+        <a href="#c-ch-s-d-ng-inline-internal-external" class="doc-title">Inline/Internal/Extrnal</a>
+        <a href="#flexbox-gridbox-position-transition-typography-animation" class="doc-title">Thuộc tính thường dùng</a>
+        <a href="#framework-css-bootstrap-tailwind" class="doc-title">Bootstrap-Tailwind</a>
+      </div>
+    </div>
+    <div id="sidebar">
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingOne">
+          <button class="accordion-button dropdown-toggle" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+            HTML, CSS, JavaScript
+          </button>
+        </h2>
+        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+          <div class="accordion-body " >
+            <a href="html.html">HTML</a>
+          </div>
+        </div>
+        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+          <div class="accordion-body  active">
+            <a href="css.html">CSS</a>
+          </div>
+        </div>
+        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            <a href="JavaScript.html">JavaScript</a>
+          </div>
+        </div>
+      </div>
+        
+            
+      <div class="accordion-item">
+       <h2 class="accordion-header" id="headingTwo">
+          <button class="accordion-button dropdown-toggle" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+            Client, Server, Git
+          </button>
+          </h2>
+        <div id="collapseTwo" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            <a href="HTTP.html">HTTP request</a>
+			
+          </div>
+        </div>
+        <div id="collapseTwo" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            <a href="Client&Server">Client & Server</a>
+          </div>
+        </div>
+        <div id="collapseTwo" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            <a href="Git.html">Git</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+		<div id="Content-doc" class="document-content">
+            <h3 id="kh-i-ni-m">khái niệm</h3>
+<ul>
+<li>Là ngôn ngữ dùng để định dạng và trang trí giao diện trang web</li>
+<li>kiểm soát các thẻ hiển thị trên trang web gồm kích thước, màu sác , khoảng cách, kiểu chữ</li>
+</ul>
+<h3 class="document-section" id="c-ch-s-d-ng-inline-internal-external">Cách sử dụng inline, internal, external</h3>
+<p><strong>inline</strong></p>
+<ul>
+<li><p>viết mã CSS trực tiếp trong các thẻ HTML bằng thuộc tính  &#39;style&#39; </p>
+<pre><code class="lang-html">  <span class="hljs-meta">&lt;!DOCTYPE html&gt;</span>  
+  <span class="hljs-tag">&lt;<span class="hljs-name">html</span>&gt;</span>  
+  <span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>  
+
+  <span class="hljs-tag">&lt;<span class="hljs-name">h1</span> <span class="hljs-attr">style</span>=<span class="hljs-string">"color:blue;text-align:center;"</span>&gt;</span>This is a heading<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>  
+  <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">style</span>=<span class="hljs-string">"color:red;"</span>&gt;</span>This is a paragraph.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>  
+
+  <span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>  
+  <span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span>
+</code></pre>
+</li>
+</ul>
+<p><strong>internal</strong></p>
+<ul>
+<li><p>viết CSS bằng &#39;style&#39; trong thẻ &#39;head&#39;, CSS này sẽ áp dụng cho toàn bộ tài liệu</p>
+<pre><code class="lang-html">          <span class="hljs-meta">&lt;!DOCTYPE html&gt;</span>  
+          <span class="hljs-tag">&lt;<span class="hljs-name">html</span>&gt;</span>  
+          <span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span>  
+              <span class="hljs-tag">&lt;<span class="hljs-name">style</span>&gt;</span><span class="css">  
+                  <span class="hljs-selector-tag">body</span> {  <span class="hljs-attribute">background-color</span>: linen;}  
+                    <span class="hljs-selector-tag">h1</span> {  <span class="hljs-attribute">color</span>: maroon;  <span class="hljs-attribute">margin-left</span>: <span class="hljs-number">40px</span>;}  
+              </span><span class="hljs-tag">&lt;/<span class="hljs-name">style</span>&gt;</span>  
+          <span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span>  
+              <span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>  
+                  <span class="hljs-tag">&lt;<span class="hljs-name">h1</span>&gt;</span>This is a heading<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>  
+                  <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>This is a paragraph.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>  
+              <span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>  
+          <span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span>
+</code></pre>
+</li>
+</ul>
+<p><strong>external</strong></p>
+<ul>
+<li><p>viết CSS trong tệp riêng biệt (VD: style.css) và liên kết với HTML qua thẻ &#39;link&#39; trong phần &#39;head&#39;</p>
+<pre><code class="lang-css">  <span class="hljs-selector-tag">body</span> {  <span class="hljs-attribute">background-color</span>: lightblue;}  
+
+  <span class="hljs-selector-tag">h1</span> {  <span class="hljs-attribute">color</span>: navy;  
+    <span class="hljs-attribute">margin-left</span>: <span class="hljs-number">20px</span>;}
+</code></pre>
+<pre><code class="lang-html">  <span class="hljs-meta">&lt;!DOCTYPE html&gt;</span>  
+  <span class="hljs-tag">&lt;<span class="hljs-name">html</span>&gt;</span>  
+  <span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span>  
+  <span class="hljs-tag">&lt;<span class="hljs-name">link</span> <span class="hljs-attr">rel</span>=<span class="hljs-string">"stylesheet"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"mystyle.css"</span>&gt;</span>  
+  <span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span>  
+  <span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>  
+
+  <span class="hljs-tag">&lt;<span class="hljs-name">h1</span>&gt;</span>This is a heading<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>  
+  <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>This is a paragraph.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>  
+
+  <span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>  
+  <span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span>
+</code></pre>
+</li>
+</ul>
+<h1 class="document-section" id="flexbox-gridbox-position-transition-typography-animation">Flexbox, gridbox, position, transition, typography, animation</h1>
+<h2 id="i-flex-box">I. Flex-box</h2>
+<h3 id="kh-i-ni-m">Khái niệm</h3>
+<ul>
+<li>là những pattern giúp thiết kế layout dễ dàng hơn</li>
+<li>phân chia không gian giữa các items và kiểm soát căn chỉnh chúng</li>
+<li>Gồm 2 phần chính: <strong>Flex container</strong> <em>(vùng chứa cha)</em> và <strong>Flex items</strong> <em>(vùng chứa con)</em></li>
+<li>Thuộc tính chính của <strong>Flex-box</strong> <code>display | flex-direction | flex-wrap | flex-flow | justified-content | align-items | align-content</code></li>
+</ul>
+<h4 id="1-display-">1.<strong>Display</strong></h4>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">style</span>&gt;</span><span class="css">
+<span class="hljs-selector-class">.box</span> {
+    <span class="hljs-attribute">display</span>: flex;
+}
+</span><span class="hljs-tag">&lt;/<span class="hljs-name">style</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"box"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"box-item"</span>&gt;</span>1<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"box-item"</span>&gt;</span>2<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"box-item"</span>&gt;</span>3<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+</code></pre>
+<h4 id="2-flex-direction">2.Flex-direction</h4>
+<ul>
+<li><p><strong>flex-direction: row</strong>  - trái sang phải</p>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">style</span>&gt;</span><span class="css">
+<span class="hljs-selector-class">.box</span> {
+  <span class="hljs-attribute">display</span>: flex;
+  <span class="hljs-attribute">flex-direction</span>: row;
+}
+</span><span class="hljs-tag">&lt;/<span class="hljs-name">style</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"box"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"box-item"</span>&gt;</span>1<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"box-item"</span>&gt;</span>2<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"box-item"</span>&gt;</span>3<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+</code></pre>
+<img src="IMG EX/a9620b86-cea6-4a9a-aa77-f8d16654a546.png" alt="">
+</li>
+<li><p><strong>flex-direction: row-reverse</strong> - phải sang trái</p>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">style</span>&gt;</span><span class="css">
+<span class="hljs-selector-class">.box</span> {
+  <span class="hljs-attribute">display</span>: flex;
+  <span class="hljs-attribute">flex-direction</span>: row-reverse;
+}
+</span><span class="hljs-tag">&lt;/<span class="hljs-name">style</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"box"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"box-item"</span>&gt;</span>1<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"box-item"</span>&gt;</span>2<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"box-item"</span>&gt;</span>3<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+</code></pre>
+<img src="IMG EX/Pasted image 20230804223849.png" alt="">
+</li>
+<li><p><strong>flex-direction: column</strong> - trên xuống dưới</p>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">style</span>&gt;</span><span class="css">
+<span class="hljs-selector-class">.box</span> {
+  <span class="hljs-attribute">display</span>: flex;
+  <span class="hljs-attribute">flex-direction</span>: column;
+}
+</span><span class="hljs-tag">&lt;/<span class="hljs-name">style</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"box"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"box-item"</span>&gt;</span>1<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"box-item"</span>&gt;</span>2<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"box-item"</span>&gt;</span>3<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+</code></pre>
+<img src="IMG EX/ba02427d-c034-4593-b6d9-ff91201d33c0.png" alt="">
+</li>
+<li><p><strong>flex-direction: column-reverse</strong> - dưới lên trên</p>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">style</span>&gt;</span><span class="css">
+<span class="hljs-selector-class">.box</span> {
+  <span class="hljs-attribute">display</span>: flex;
+  <span class="hljs-attribute">flex-direction</span>: column-reverse;
+}
+</span><span class="hljs-tag">&lt;/<span class="hljs-name">style</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"box"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"box-item"</span>&gt;</span>1<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"box-item"</span>&gt;</span>2<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"box-item"</span>&gt;</span>3<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+</code></pre>
+<img src="IMG EX/984336e9-d8f3-4b06-955e-0f54144eb5dc.png" alt="">
+</li>
+</ul>
+<h4 id="3-flex-wrap-">3.<strong>Flex-wrap:</strong></h4>
+<ul>
+<li><p><strong>Flex-wrap: nowrap</strong> - (mặc định) không có gì thay đổi</p>
+<pre><code class="lang-html">  <span class="hljs-tag">&lt;<span class="hljs-name">style</span>&gt;</span><span class="css">
+  <span class="hljs-selector-class">.box</span> {
+      <span class="hljs-attribute">display</span>: flex;
+      <span class="hljs-attribute">flex-wrap</span>: nowrap;
+  }
+  </span><span class="hljs-tag">&lt;/<span class="hljs-name">style</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"box"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"box-item"</span>&gt;</span>1<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"box-item"</span>&gt;</span>2<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"box-item"</span>&gt;</span>3<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"box-item"</span>&gt;</span>4<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"box-item"</span>&gt;</span>5<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"box-item"</span>&gt;</span>6<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"box-item"</span>&gt;</span>7<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"box-item"</span>&gt;</span>8<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"box-item"</span>&gt;</span>9<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+</code></pre>
+<p>  ![[49300129-3f31-4e69-becc-61eb42b234f6 1.webp]]</p>
+</li>
+<li><p><strong>Flex-wrap: wrap</strong> - item sẽ được bao trọn trong container
+![[7b855427-cdd0-423b-8336-9c513649a01e.webp]]</p>
+</li>
+<li><p><strong>FLex-wrap: wrap-reverse</strong> - ngược lại
+![[6c2f9d35-2a1b-4500-bfa0-71028cd30a13.webp]]</p>
+</li>
+</ul>
+<h4 id="4-flex-flow-r-t-g-n-c-a-flex-direction-v-flex-wrap-">4.<strong>Flex-flow:</strong> (rút gọn của flex-direction và flex-wrap)</h4>
+<ul>
+<li><code>flex-flow: flex-direction | flex-wrap</code><pre><code class="lang-html">  <span class="hljs-tag">&lt;<span class="hljs-name">style</span>&gt;</span><span class="css">
+  <span class="hljs-selector-class">.box</span> {
+    <span class="hljs-attribute">display</span>: flex;
+    <span class="hljs-attribute">flex-flow</span>: row-reverse wrap;
+  }
+  </span><span class="hljs-tag">&lt;/<span class="hljs-name">style</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"box"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"box-item"</span>&gt;</span>1<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"box-item"</span>&gt;</span>2<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"box-item"</span>&gt;</span>3<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+</code></pre>
+</li>
+</ul>
+<h4 id="5-justify-content-">5.<strong>Justify-content</strong></h4>
+<p>VD</p>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">style</span>&gt;</span><span class="css">
+<span class="hljs-selector-class">.box</span> {
+  <span class="hljs-attribute">display</span>: flex;
+  <span class="hljs-attribute">justify-content</span>: flex-start;
+}
+</span><span class="hljs-tag">&lt;/<span class="hljs-name">style</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"box"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"box-item"</span>&gt;</span>1<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"box-item"</span>&gt;</span>2<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"box-item"</span>&gt;</span>3<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"box-item"</span>&gt;</span>4<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+</code></pre>
+<ul>
+<li><p><strong>Justify-content: flex-start</strong> - canh lề bên trái</p>
+<img src="IMG EX/a9620b86-cea6-4a9a-aa77-f8d16654a546.png" alt="">  
+</li>
+<li><p><strong>Justify-content: flex-end</strong> - canh lề phải</p>
+  <img src="IMG EX/Pasted image 20230804223849.png" alt="">
+</li>
+<li><p><strong>Justify-content: center</strong> - canh giữa theo chiều ngang 
+  <pre><code class="lang-css"><span class="hljs-selector-class">.container</span> {
+    <span class="hljs-attribute">display</span>: flex;
+    <span class="hljs-attribute">justify-content</span>: center; <span class="hljs-comment">/* aligns items to the center of the main axis */</span>
+}
+</code></pre></p>
+</li>
+<li><p><strong>justify-content: space-between</strong> - canh lề đều nhau<br> 
+  <pre><code class="lang-css"><span class="hljs-selector-class">.container</span> {
+    <span class="hljs-attribute">display</span>: flex;
+    <span class="hljs-attribute">justify-content</span>: space-between; <span class="hljs-comment">/* aligns items evenly along the main axis, with the first item aligning to the start and the last item aligning to the end */</span>
+}
+</code></pre>
+</p>
+</li>
+<li><p><strong>justify-content: space-around</strong> - chia khoảng cách đầu cuối. Khoảng cách đầu cuối = 1/2 khoảng của các item
+  <pre><code class="lang-css"><span class="hljs-selector-class">.container</span> {
+    <span class="hljs-attribute">display</span>: flex;
+    <span class="hljs-attribute">justify-content</span>: space-around; <span class="hljs-comment">/* aligns items evenly along the main axis, with equal space around each item. */</span>
+}
+</code></pre></p>
+</li>
+<li><p><strong>justify-content: space-evenly</strong>  - chia đều các khoảng cách của các item
+  <pre><code class="lang-css"><span class="hljs-selector-class">.container</span> {
+    <span class="hljs-attribute">display</span>: flex;
+    <span class="hljs-attribute">justify-content</span>: space-evenly;
+</code></pre></p>
+</li>
+</ul>
+<h4 id="6-align-item-">6.<strong>align-item</strong></h4>
+<ul>
+<li><strong>align-item: stretch</strong> - item sẽ được kéo dài so với chiều cao container <pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">style</span>&gt;</span><span class="css">
+<span class="hljs-selector-class">.box</span> {
+<span class="hljs-attribute">display</span>: flex;
+<span class="hljs-attribute">align-item</span>: stretch;
+}
+</span><span class="hljs-tag">&lt;/<span class="hljs-name">style</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"box"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"box-item"</span>&gt;</span>1<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"box-item"</span>&gt;</span>2<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"box-item"</span>&gt;</span>3<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"box-item"</span>&gt;</span>4<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+</code></pre>
+</li>
+<img src="IMG EX/16d76964-a366-4215-8185-d29bbcf14ab8.png" alt="">
+<li><strong>align-item: flex-start</strong> - canh lề bên trên
+</li>
+<img src="IMG EX/c67fcfc4-9a2c-4fdc-9c2b-0764e72eb338.png" alt="">
+<li><p><strong>align-item: flex-end</strong> - canh lề bên dưới</p>
+  <img src="IMG EX/67f0f195-8c8b-4622-b613-3564ed21ca86.png" alt="">
+</li>
+<li><p><strong>align-item: center</strong> - canh giữa</p>
+  <img src="IMG EX/0ffe3809-2031-4f0f-90d2-54a69413b7c3.png" alt="">
+</li>
+<li><strong>align-item: baseline</strong> - canh giữa theo dòng văn bản
+</li>
+<img src="IMG EX/481911b3-8171-41f8-bf45-41098e6e8f57.png" alt="">
+</ul>
+<h2 id="ii-grid-box">II. Grid-box</h2>
+<ul>
+<li><p>cho phép sắp xếp các thành phần của 1 tranh thành các vùng</p>
+<pre><code class="lang-html">&lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"grid-container"</span>&gt;
+&lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"grid-item"</span>&gt;<span class="hljs-number">1</span>&lt;/<span class="hljs-keyword">div</span>&gt;
+&lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"grid-item"</span>&gt;<span class="hljs-number">2</span>&lt;/<span class="hljs-keyword">div</span>&gt;
+&lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"grid-item"</span>&gt;<span class="hljs-number">3</span>&lt;/<span class="hljs-keyword">div</span>&gt;  
+&lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"grid-item"</span>&gt;<span class="hljs-number">4</span>&lt;/<span class="hljs-keyword">div</span>&gt;
+&lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"grid-item"</span>&gt;<span class="hljs-number">5</span>&lt;/<span class="hljs-keyword">div</span>&gt;
+&lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"grid-item"</span>&gt;<span class="hljs-number">6</span>&lt;/<span class="hljs-keyword">div</span>&gt;  
+&lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"grid-item"</span>&gt;<span class="hljs-number">7</span>&lt;/<span class="hljs-keyword">div</span>&gt;
+&lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"grid-item"</span>&gt;<span class="hljs-number">8</span>&lt;/<span class="hljs-keyword">div</span>&gt;
+&lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"grid-item"</span>&gt;<span class="hljs-number">9</span>&lt;/<span class="hljs-keyword">div</span>&gt;  
+&lt;/<span class="hljs-keyword">div</span>&gt;
+</code></pre>
+<h4 id="-display-grid"><strong>Display</strong>: grid</h4>
+<pre><code class="lang-css"><span class="hljs-selector-class">.grid-container</span>{
+  <span class="hljs-attribute">display</span>: grid;
+}
+</code></pre>
+</li>
+<li><p><strong>Column</strong> <em>(cột)</em></p>
+<ul>
+<li><strong>grid-template-columns:</strong> - điều chỉnh theo cột<pre><code class="lang-css">  .grid-container{
+      <span class="hljs-built_in">display</span>: grid;
+      grid-<span class="hljs-keyword">template</span>-columns: <span class="hljs-keyword">auto</span> <span class="hljs-keyword">auto</span> <span class="hljs-keyword">auto</span>; <span class="hljs-comment">//tự động cân bằng</span>
+  }
+</code></pre>
+<pre><code class="lang-css">  .<span class="hljs-keyword">grid</span>-<span class="hljs-keyword">container</span>{
+      display: <span class="hljs-keyword">grid</span>;
+      <span class="hljs-keyword">grid</span>-template-columns: <span class="hljs-number">20</span>% <span class="hljs-number">30</span>% <span class="hljs-number">40</span>%; <span class="hljs-comment">//chỉnh theo tỷ lệ</span>
+  }
+</code></pre>
+</li>
+</ul>
+</li>
+<li><p><strong>Row</strong> <em>(hàng)</em></p>
+<ul>
+<li><strong>grid-template-row:</strong> - điều chỉnh theo hàng<ul>
+<li>điều chỉnh hàng dựa theo thuộc tính <code>grid-template-rows</code> (tương tự như cột)</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p><strong>Gaps</strong> <em>(khoảng trống)</em></p>
+<ul>
+<li><strong>grid-gap:</strong> - điều chỉnh khoảng trống giữa cột và hàng<ul>
+<li>điều chỉnh kích thước khoảng cách bằng các thuộc tính<pre><code class="lang-css">grid-<span class="hljs-attribute">column-gap</span>: ; <span class="hljs-comment">//khoảng cách theo cột</span>
+grid-row-gap: ; <span class="hljs-comment">//khoảng cách theo hàng</span>
+grid-cap: ; <span class="hljs-comment">//khoảng cách theo hàng và cột</span>
+</code></pre>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p><strong>Lines</strong> <em>(viền giữa cột và hàng)</em></p>
+<ul>
+<li>có thể tùy chỉnh gộp cột bằng cách css ở từng ô theo các thuộc tính<pre><code class="lang-css">  <span class="hljs-built_in">grid</span>-<span class="hljs-built_in">columns</span>-start: ; <span class="hljs-comment">/*Line bắt đầu*/</span>
+  <span class="hljs-built_in">grid</span>-<span class="hljs-built_in">columns</span>-end: ; <span class="hljs-comment">/*Line kết thúc*/</span>
+  <span class="hljs-built_in">grid</span>-<span class="hljs-built_in">row</span>-start: ; <span class="hljs-comment">/*Line bắt đầu*/</span>
+  <span class="hljs-built_in">grid</span>-<span class="hljs-built_in">row</span>-end: ; <span class="hljs-comment">/*Line kết thúc*/</span>
+</code></pre>
+</li>
+<li>Hoặc<pre><code class="lang-css">  <span class="hljs-built_in">grid</span>-<span class="hljs-built_in">columns</span>: ; <span class="hljs-comment">/*Line bắt đầu | Line kết thúc*/</span>
+  <span class="hljs-built_in">grid</span>-<span class="hljs-built_in">row</span>: ; <span class="hljs-comment">/*Line bắt đầu | Line kết thúc*/</span>
+</code></pre>
+</li>
+<li><p>VD:</p>
+<pre><code class="lang-html">  &lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"grid-container"</span>&gt;
+      &lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"grid-item-1"</span>&gt;<span class="hljs-number">1</span>&lt;/<span class="hljs-keyword">div</span>&gt;
+      &lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"grid-item-2"</span>&gt;<span class="hljs-number">2</span>&lt;/<span class="hljs-keyword">div</span>&gt;
+      &lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"grid-item-3"</span>&gt;<span class="hljs-number">3</span>&lt;/<span class="hljs-keyword">div</span>&gt;  
+      &lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"grid-item-4"</span>&gt;<span class="hljs-number">4</span>&lt;/<span class="hljs-keyword">div</span>&gt;
+      &lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"grid-item-5"</span>&gt;<span class="hljs-number">5</span>&lt;/<span class="hljs-keyword">div</span>&gt;
+      &lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"grid-item-6"</span>&gt;<span class="hljs-number">6</span>&lt;/<span class="hljs-keyword">div</span>&gt;  
+      &lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"grid-item-7"</span>&gt;<span class="hljs-number">7</span>&lt;/<span class="hljs-keyword">div</span>&gt;
+      &lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"grid-item-8"</span>&gt;<span class="hljs-number">8</span>&lt;/<span class="hljs-keyword">div</span>&gt;
+  &lt;/<span class="hljs-keyword">div</span>&gt;
+</code></pre>
+<pre><code class="lang-css">  <span class="hljs-comment">/*gộp cột từ line 1 đến 3 */</span>
+  <span class="hljs-selector-class">.grid-item-1</span>{
+      <span class="hljs-attribute">grid-column-start</span>: <span class="hljs-number">1</span>;
+      <span class="hljs-attribute">grid-column-end</span>: <span class="hljs-number">3</span>;
+  }
+  <span class="hljs-comment">/*gộp hàng từ line 1 đến 3 */</span>
+  <span class="hljs-selector-class">.grid-item-2</span>{
+      <span class="hljs-attribute">grid-row-start</span>: <span class="hljs-number">1</span>;
+      <span class="hljs-attribute">grid-row-end</span>: <span class="hljs-number">3</span>;
+  }
+</code></pre>
+</li>
+</ul>
+</li>
+</ul>
+<pre><code>- hoặc có thể tùy chỉnh theo vùng thuộc tính
+    ```css
+    grid-area: grid-row-<span class="hljs-keyword">start</span> / grid-<span class="hljs-keyword">column</span>-<span class="hljs-keyword">start</span> / grid-<span class="hljs-keyword">row</span>-<span class="hljs-keyword">end</span> / grid-<span class="hljs-keyword">column</span>-<span class="hljs-keyword">end</span>;
+    ```
+</code></pre><h1 id="position-absolute-relative-fixed-sticky-k-thu-t-center-element">Position (absolute, relative, fixed, sticky). Kỹ thuật center element</h1>
+<h2 id="position">Position</h2>
+<ul>
+<li>dùng để điều chỉnh vị trí của một phần tử trên trang web</li>
+<li>kiểm soát một phần tử được hiển thị và vị trí trong bố cục của trang</li>
+<li>các giá trị chính của &#39;position&#39; <code>positon: relative | absolute | fixed | sticky</code><pre><code class="lang-html">  &lt;body&gt;
+     <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"box-orange"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></span>
+     &lt;div <span class="hljs-class"><span class="hljs-keyword">class</span></span>=<span class="hljs-string">"box-blue"</span>&gt;<span class="xml"><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></span>
+  &lt;<span class="hljs-regexp">/body&gt;</span>
+</code></pre>
+</li>
+<li><h4 id="1-relative-v-tr-t-ng-i-">1. Relative (vị trí tương đối)</h4>
+<ul>
+<li>không bị phụ thuộc đối tượng nào khác</li>
+<li>lấy vị trí đang đứng làm gốc tọa độ</li>
+<li>dễ dàng thay đổi vị trí nhờ vào các thuộc tính <code>top | right | bottom | left</code><pre><code class="lang-css">  <span class="hljs-selector-class">.box-orange</span> {
+    <span class="hljs-attribute">position</span>: relative;  <span class="hljs-comment">/** chúng ta có thể di chuyển được element*/</span>
+    <span class="hljs-attribute">background</span>: orange;
+    <span class="hljs-attribute">width</span>: <span class="hljs-number">100px</span>;
+    <span class="hljs-attribute">height</span>: <span class="hljs-number">100px</span>;
+    <span class="hljs-attribute">top</span>: <span class="hljs-number">100px</span>;         <span class="hljs-comment">/*dịch chuyển xuống 100px từ vị trí ban đầu của nó */</span>
+    <span class="hljs-attribute">left</span>: <span class="hljs-number">100px</span>;        <span class="hljs-comment">/* dịch chuyển sang phải 100px */</span>
+  }
+</code></pre>
+</li>
+</ul>
+</li>
+<li><h4 id="2-absolute-v-tr-tuy-t-i-">2.Absolute (vị trí tuyệt đối)</h4>
+<ul>
+<li>bị phụ thuộc vào thẻ cha gần nhất có thuộc tính <strong>&#39;position&#39;</strong></li>
+<li>lấy vị trí của thẻ cha làm gốc tọa độ</li>
+<li><p>dễ dàng thay đổi vị trí nhờ vào các thuộc tính <code>top | right | bottom | left</code></p>
+<pre><code class="lang-html">  <span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
+     <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"container"</span>&gt;</span>            <span class="hljs-comment">&lt;!--div "container" làm thẻ cha--&gt;</span>
+     <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"box-orange"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+     <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"box-blue"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+     <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
+</code></pre>
+<pre><code class="lang-css">  <span class="hljs-selector-class">.box-orange</span> {
+    <span class="hljs-attribute">position</span>: absolute;
+    <span class="hljs-attribute">background</span>: orange;
+    <span class="hljs-attribute">width</span>: <span class="hljs-number">100px</span>;
+    <span class="hljs-attribute">height</span>: <span class="hljs-number">100px</span>;
+  }
+</code></pre>
+</li>
+<li><code>position: absolute</code> đưa element về vị trí top-left theo thẻ cha<pre><code class="lang-css">  <span class="hljs-selector-class">.container</span>{
+    <span class="hljs-attribute">background</span>: black;
+    <span class="hljs-attribute">position</span>: relative;
+  }
+  <span class="hljs-selector-class">.box-orange</span> {
+    <span class="hljs-attribute">position</span>: absolute;
+    <span class="hljs-attribute">background</span>: orange;
+    <span class="hljs-attribute">width</span>: <span class="hljs-number">100px</span>;
+    <span class="hljs-attribute">height</span>: <span class="hljs-number">100px</span>;
+    <span class="hljs-attribute">left</span>: <span class="hljs-number">5px</span>;
+    <span class="hljs-attribute">top</span>: <span class="hljs-number">5px</span>;             <span class="hljs-comment">/*di chuyển hình xuống 5px*/</span>
+  }
+</code></pre>
+</li>
+</ul>
+</li>
+<li><h4 id="3-fixed">3.Fixed</h4>
+<ul>
+<li>tương tự như <code>absolute</code></li>
+<li><p>phần tử phụ thuộc vào cửa sổ của trình duyệt và không thay đổi khi scroll</p>
+<p>  <em>html</em></p>
+<pre><code class="lang-html">    <span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"container"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Scroll down the page<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"box-orange"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+</code></pre>
+<p>  <em>css</em></p>
+<pre><code class="lang-css">  <span class="hljs-selector-class">.container</span> { 
+    <span class="hljs-attribute">position</span>: relative;
+    <span class="hljs-attribute">background</span>: lightgray;
+    <span class="hljs-attribute">width</span>: <span class="hljs-number">50%</span>;
+    <span class="hljs-attribute">margin</span>: <span class="hljs-number">0</span> auto;
+    <span class="hljs-attribute">height</span>: <span class="hljs-number">1000px</span>;
+  }
+
+  <span class="hljs-selector-class">.container</span> <span class="hljs-selector-tag">p</span> {
+    <span class="hljs-attribute">text-align</span>: center;
+    <span class="hljs-attribute">font-size</span>: <span class="hljs-number">20px</span>;
+  }
+
+  <span class="hljs-selector-class">.box-orange</span> {
+    <span class="hljs-attribute">background</span>: orange;
+    <span class="hljs-attribute">width</span>: <span class="hljs-number">100px</span>;
+    <span class="hljs-attribute">height</span>: <span class="hljs-number">100px</span>;
+    <span class="hljs-attribute">position</span>: fixed;
+    <span class="hljs-attribute">right</span>: <span class="hljs-number">5px</span>;
+  }
+</code></pre>
+</li>
+</ul>
+</li>
+<li><h4 id="4-sticky">4.Sticky</h4>
+<ul>
+<li>là sự kết hợp của <code>position: relative</code> và <code>position: fixed</code></li>
+<li><p>có thể hiểu là khi bạn cuộn đến vị trí của element sẽ giống như là <code>fixed</code> và khi cuộn ra khỏi element thì giống như là <code>relative</code></p>
+<pre><code class="lang-html">    &lt;body&gt;
+      &lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"container"</span>&gt;
+        &lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"box-orange"</span>&gt;&lt;/<span class="hljs-keyword">div</span>&gt;
+        &lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"box-blue"</span>&gt;&lt;/<span class="hljs-keyword">div</span>&gt;
+        &lt;p&gt;Scroll down <span class="hljs-keyword">the</span> page&lt;/p&gt;
+      &lt;/<span class="hljs-keyword">div</span>&gt;
+</code></pre>
+<pre><code class="lang-css">      <span class="hljs-selector-class">.container</span> {
+        <span class="hljs-attribute">position</span>: relative;
+        <span class="hljs-attribute">background</span>: lightgray;
+        <span class="hljs-attribute">width</span>: <span class="hljs-number">50%</span>;
+        <span class="hljs-attribute">margin</span>: <span class="hljs-number">0</span> auto;
+        <span class="hljs-attribute">height</span>: <span class="hljs-number">1000px</span>;
+      }
+
+      <span class="hljs-selector-class">.container</span> <span class="hljs-selector-tag">p</span> {
+        <span class="hljs-attribute">text-align</span>: center;
+        <span class="hljs-attribute">font-size</span>: <span class="hljs-number">20px</span>;
+      }
+
+      <span class="hljs-selector-class">.box-orange</span> {
+        <span class="hljs-attribute">background</span>: orange;
+        <span class="hljs-attribute">width</span>: <span class="hljs-number">100px</span>;
+        <span class="hljs-attribute">height</span>: <span class="hljs-number">100px</span>;
+        <span class="hljs-attribute">position</span>: sticky;
+        <span class="hljs-attribute">right</span>: <span class="hljs-number">20px</span>;
+      }
+
+      <span class="hljs-selector-class">.box-blue</span> {
+        <span class="hljs-attribute">background</span>: lightblue;
+        <span class="hljs-attribute">width</span>: <span class="hljs-number">100px</span>;
+        <span class="hljs-attribute">height</span>: <span class="hljs-number">100px</span>;
+      }
+</code></pre>
+<blockquote>
+<p><em>note: <code>position: sticky</code> không được hỗ trợ trên nhiều trình duyệt, khuyên ko nên dùng</em></p>
+</blockquote>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="k-thu-t-center-element">kỹ thuật center element</h2>
+<ul>
+<li><h4 id="1-c-n-gi-a-b-ng-flex-box">1.căn giữa bằng flex-box</h4>
+<ul>
+<li>căn giữa ngang và dọc<pre><code class="lang-css">  <span class="hljs-selector-class">.container</span> {
+    <span class="hljs-attribute">display</span>: flex;
+    <span class="hljs-attribute">justify-content</span>: center; <span class="hljs-comment">/* Căn giữa ngang */</span>
+    <span class="hljs-attribute">align-items</span>: center; <span class="hljs-comment">/* Căn giữa dọc */</span>
+  }
+</code></pre>
+</li>
+</ul>
+</li>
+<li><h4 id="2-c-n-gi-a-b-ng-margin">2.căn giữa bằng margin</h4>
+<ul>
+<li>áp dụng khi biết được kích thước phần tử con<pre><code class="lang-css">      <span class="hljs-selector-class">.child</span> {
+        <span class="hljs-attribute">width</span>: <span class="hljs-number">200px</span>; <span class="hljs-comment">/* Kích thước của phần tử con */</span>
+        <span class="hljs-attribute">margin</span>: <span class="hljs-number">0</span> auto; <span class="hljs-comment">/* Căn giữa ngang bằng cách đặt left và right là auto */</span>
+      }
+</code></pre>
+</li>
+</ul>
+</li>
+<li><h4 id="3-c-n-gi-a-b-ng-position-obsolute-">3.căn giữa bằng<code>position: obsolute</code></h4>
+<ul>
+<li><p>áp dụng khi muốn căn giữa  trong một phần tử cha </p>
+<pre><code class="lang-css">  <span class="hljs-selector-class">.container</span> {
+    <span class="hljs-attribute">position</span>: relative; <span class="hljs-comment">/* Đặt vị trí tương đối */</span>
+  }
+
+  <span class="hljs-selector-class">.child</span> {
+    <span class="hljs-attribute">position</span>: absolute;
+    <span class="hljs-attribute">top</span>: <span class="hljs-number">50%</span>;
+    <span class="hljs-attribute">left</span>: <span class="hljs-number">50%</span>;
+  }
+</code></pre>
+</li>
+</ul>
+</li>
+<li><h4 id="4-c-n-gi-a-b-ng-grid">4.căn giữa bằng grid</h4>
+<ul>
+<li><p>sử dụng <code>grid</code> căn giữa phần tử trong một lưới</p>
+<pre><code class="lang-css">  <span class="hljs-selector-class">.container</span> {
+    <span class="hljs-attribute">display</span>: grid;
+    <span class="hljs-attribute">place-items</span>: center; <span class="hljs-comment">/* Căn giữa cả ngang và dọc */</span>
+  }
+</code></pre>
+</li>
+</ul>
+</li>
+</ul>
+<h1 id="typography-nh-d-ng-ch-">Typography(định dạng chữ)</h1>
+<h2 id="kh-i-ni-m">Khái niệm</h2>
+<ul>
+<li>là khía cạnh quan trọng trong việc thiết kế web</li>
+<li>giúp bạn sắp xếp và định dạng văn bản trong trang web</li>
+<li><h4 id="c-c-thu-c-t-nh-quan-tr-ng-trong-typography">các thuộc tính quan trọng trong Typography</h4>
+<pre><code class="lang-css">  {
+  <span class="hljs-attribute">font-family</span>: arial, helvatica,...;<span class="hljs-comment">/*phông chữ*/</span>
+  <span class="hljs-attribute">font-size</span>: <span class="hljs-number">2px</span>, <span class="hljs-number">2rem</span>, <span class="hljs-number">2%</span>,...; <span class="hljs-comment">/*kích thước chữ*/</span>
+  <span class="hljs-attribute">font-weight</span>: bold, normal, <span class="hljs-number">100</span>, <span class="hljs-number">200</span>,...; <span class="hljs-comment">/*độ đậm chữ*/</span>
+  <span class="hljs-attribute">line-height</span>: <span class="hljs-number">2px</span>, <span class="hljs-number">2rem</span>, <span class="hljs-number">2%</span>,...; <span class="hljs-comment">/*khoảng cách dòng*/</span>
+  <span class="hljs-attribute">text-align</span>: <span class="hljs-number">2px</span>, <span class="hljs-number">2rem</span>, <span class="hljs-number">2%</span>,...; <span class="hljs-comment">/*khoảng cách các ký tự*/</span>
+  <span class="hljs-attribute">text-decoration</span>: dotted, solid,...;<span class="hljs-comment">/*trang trí văn vản như gạch chân,gạch ngang,...*/</span>
+  <span class="hljs-attribute">color</span>: red, rgba,...; <span class="hljs-comment">/*màu chữ*/</span>
+      }
+</code></pre>
+</li>
+</ul>
+<h1 id="animation">Animation</h1>
+<h2 id="kh-i-ni-m">Khái niệm</h2>
+<ul>
+<li>cho phép tạo hiệu ứng chuyển động cho các element trong trang web mà không cần phải dùng javascript hay flash<h3 id="v-d-v-chuy-n-ng-th-ng-cho-m-t-th-div">Ví dụ về chuyển động thẳng cho một thẻ div</h3>
+<em>html</em><pre><code class="lang-html">&lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"container"</span>&gt;
+&lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"element"</span>&gt;&lt;/<span class="hljs-keyword">div</span>&gt;
+&lt;/<span class="hljs-keyword">div</span>&gt;
+</code></pre>
+</li>
+<li><p>Một số thuộc tính</p>
+<ul>
+<li><h4 id="1-keyframes-d-ng-thi-t-l-p-m-t-chuy-n-ng">1.<strong>@keyframes:</strong> dùng để thiết lập một chuyển động</h4>
+cú pháp <code>@keyframes name {/code/}</code>
+Trong đó:</li>
+<li>name: là tên chuyển động</li>
+<li>code: là các đoạn code cho tiến trình chuyển động. Có 2 dạng:<ul>
+<li>Sử dụng phần trăm từ 0% đến 100%</li>
+<li><strong>from...to</strong> : thiết lập giá trị từ đầu (from-tương đương với 0%) đến kết thúc (to - tương đương 10</li>
+</ul>
+</li>
+<li><strong>bảng tóm tắt về các hiệu ứng animation trong CSS</strong><ul>
+<li><strong>@keyframes</strong>: <em>chỉ định code animation</em></li>
+<li><strong>animation-name</strong> </li>
+<li><strong>animation-delay</strong>: <em>chỉ định trì hoãn bắt đầu animation</em></li>
+<li><strong>animation-direction</strong>: <em>xác định xem chiều chạy của animation sẽ như thể nào</em></li>
+<li><strong>animation-duration</strong>: <em>thiết lập khoảng thời gian thực thi chuyển động</em></li>
+<li><strong>animation-fill-mode</strong>: <em>thay đổi trạng thái của element trước khi bắt đầu và kết thúc</em></li>
+<li><strong>animation-iteration-count</strong>: <em>thiết lập số lần thực hiện một animation</em></li>
+<li><strong>animation-play-state</strong>: ; /**/ </li>
+<li><strong>animation-timing-function</strong>: <em>xác định tốc độ thay đổi khi hiệu ứng di chuyển</em></li>
+</ul>
+</li>
+<li><h4 id="2-c-ch-s-d-ng-c-c-animation">2.cách sử dụng các animation</h4>
+<pre><code class="lang-html">  <span class="hljs-section">&lt;body&gt;</span>
+      <span class="hljs-section">&lt;div&gt;</span><span class="hljs-section">&lt;/div&gt;</span>
+  <span class="hljs-section">&lt;/body&gt;</span>
+</code></pre>
+</li>
+<li>Thay đổi màu nền background, cú pháp from...to<pre><code class="lang-css">  <span class="hljs-comment">/* code animation */</span>
+  @<span class="hljs-keyword">keyframes</span> example {  
+    <span class="hljs-selector-tag">from</span> {<span class="hljs-attribute">background-color</span>: pink;}
+    <span class="hljs-selector-tag">to</span> {<span class="hljs-attribute">background-color</span>: purple;}
+  }
+  <span class="hljs-comment">/* Áp dụng animation vào phần tử */</span>
+  <span class="hljs-selector-tag">div</span> {  
+      <span class="hljs-attribute">width</span>: <span class="hljs-number">100px</span>;  
+      <span class="hljs-attribute">height</span>: <span class="hljs-number">100px</span>;  
+      <span class="hljs-attribute">background-color</span>: purple;  
+      <span class="hljs-attribute">animation-name</span>: example;  
+      <span class="hljs-attribute">animation-duration</span>: <span class="hljs-number">4s</span>;
+  }
+</code></pre>
+</li>
+<li><p>thay đổi màu nền background, cú pháp phần trăm(%)</p>
+<pre><code class="lang-css">  <span class="hljs-comment">/* Code animation */</span>
+  @<span class="hljs-keyword">keyframes</span> example { 
+      0% {
+      <span class="hljs-attribute">background-color</span>: crimso
+      } 
+      25% {
+      <span class="hljs-attribute">background-color</span>: lightsalmon;
+      }  
+      50% {
+      <span class="hljs-attribute">background-color</span>: pink;
+      }  
+      100% {
+      <span class="hljs-attribute">background-color</span>: indigo;
+      }
+  }
+  <span class="hljs-comment">/* Áp dụng animation vào phần tử */</span>
+  <span class="hljs-selector-tag">div</span> {  
+      <span class="hljs-attribute">width</span>: <span class="hljs-number">100px</span>;  
+      <span class="hljs-attribute">height</span>: <span class="hljs-number">100px</span>;  
+      <span class="hljs-attribute">background-color</span>: purple;  
+      <span class="hljs-attribute">animation-name</span>: example;  
+      <span class="hljs-attribute">animation-duration</span>: <span class="hljs-number">4s</span>;
+  }
+</code></pre>
+</li>
+<li><h5 id="animation-delay">animation-delay</h5>
+<ul>
+<li>độ trễ 3s trước khi bắt đầu hiệu ứng<pre><code class="lang-css">  <span class="hljs-comment">/* Code animation */</span>
+  @<span class="hljs-keyword">keyframes</span> example { 
+      0% {
+      <span class="hljs-attribute">background-color</span>: crimso
+      } 
+      25% {
+      <span class="hljs-attribute">background-color</span>: lightsalmon;
+      }  
+      50% {
+      <span class="hljs-attribute">background-color</span>: pink;
+      }  
+      100% {
+      <span class="hljs-attribute">background-color</span>: indigo;
+      }
+  }
+  <span class="hljs-comment">/* Áp dụng animation vào phần tử */</span>
+  <span class="hljs-selector-tag">div</span> {  
+      <span class="hljs-attribute">width</span>: <span class="hljs-number">100px</span>;  
+      <span class="hljs-attribute">height</span>: <span class="hljs-number">100px</span>;  
+      <span class="hljs-attribute">background-color</span>: purple;  
+      <span class="hljs-attribute">animation-name</span>: example;  
+      <span class="hljs-attribute">animation-duration</span>: <span class="hljs-number">4s</span>;
+      <span class="hljs-attribute">animation-delay</span>: <span class="hljs-number">3s</span>;
+      <span class="hljs-comment">/*nếu sử dụng giá trị âm, animation sẽ như đã chạy trong N giây*/</span>
+  }
+</code></pre>
+</li>
+</ul>
+</li>
+<li><h5 id="animation-iteration-count">animation-iteration-count</h5>
+<ul>
+<li>giá trị thường dùng: <ul>
+<li>số lần </li>
+<li><strong>infinite</strong>: lặp lại liên tục và vô hạn<pre><code class="lang-css"><span class="hljs-comment">/* Code animation */</span>
+@<span class="hljs-keyword">keyframes</span> example { 
+  0% {
+  <span class="hljs-attribute">background-color</span>: crimso
+  } 
+  25% {
+  <span class="hljs-attribute">background-color</span>: lightsalmon;
+  }  
+  50% {
+  <span class="hljs-attribute">background-color</span>: pink;
+  }  
+  100% {
+  <span class="hljs-attribute">background-color</span>: indigo;
+  }
+}
+<span class="hljs-comment">/* Áp dụng animation vào phần tử */</span>
+<span class="hljs-selector-tag">div</span> {  
+  <span class="hljs-attribute">width</span>: <span class="hljs-number">100px</span>;  
+  <span class="hljs-attribute">height</span>: <span class="hljs-number">100px</span>;  
+  <span class="hljs-attribute">background-color</span>: purple;  
+  <span class="hljs-attribute">animation-name</span>: example;  
+  <span class="hljs-attribute">animation-duration</span>: <span class="hljs-number">4s</span>;
+  <span class="hljs-attribute">animation-iteration-count</span>: <span class="hljs-number">5</span>; <span class="hljs-comment">/*lặp lại 5 lần*/</span>
+  <span class="hljs-comment">/* nếu sử dụng infinite, animation sẽ lặp lại liên tục */</span>
+}
+</code></pre>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><h5 id="animation-direction">animation-direction</h5>
+<ul>
+<li>giá trị thường dùng<ul>
+<li><strong>normal</strong>: di chuyển bình thường tiến về phía trước</li>
+<li><strong>reverse</strong>: di chuyển hướng ngược lại, lùi về sau</li>
+<li><strong>alternate</strong>: tiến về phía trước, sau đó lùi về hướng ngược lại</li>
+<li><strong>alternate-reverse</strong>: di chuyển hướng ngược lại rồi đổi chiều tiền về trước</li>
+</ul>
+</li>
+<li>VD: chạy theo hướng ngược lại<pre><code class="lang-css">  <span class="hljs-comment">/* Code animation */</span>
+  @<span class="hljs-keyword">keyframes</span> example { 
+      0% {
+      <span class="hljs-attribute">background-color</span>: crimso
+      } 
+      25% {
+      <span class="hljs-attribute">background-color</span>: lightsalmon;
+      }  
+      50% {
+      <span class="hljs-attribute">background-color</span>: pink;
+      }  
+      100% {
+      <span class="hljs-attribute">background-color</span>: indigo;
+      }
+  }
+  <span class="hljs-comment">/* Áp dụng animation vào phần tử */</span>
+  <span class="hljs-selector-tag">div</span> {  
+      <span class="hljs-attribute">width</span>: <span class="hljs-number">100px</span>;  
+      <span class="hljs-attribute">height</span>: <span class="hljs-number">100px</span>;  
+      <span class="hljs-attribute">background-color</span>: purple;  
+      <span class="hljs-attribute">animation-name</span>: example;  
+      <span class="hljs-attribute">animation-duration</span>: <span class="hljs-number">4s</span>;
+      <span class="hljs-attribute">animation-iteration-count</span>: <span class="hljs-number">5</span>;
+      <span class="hljs-attribute">animation-direction</span>: reverse;
+  }
+</code></pre>
+</li>
+<li><strong>chạy với giá trị alternate</strong><pre><code class="lang-css">  <span class="hljs-comment">/* Code animation */</span>
+  @<span class="hljs-keyword">keyframes</span> example { 
+      0% {
+      <span class="hljs-attribute">background-color</span>: crimso
+      } 
+      25% {
+      <span class="hljs-attribute">background-color</span>: lightsalmon;
+      }  
+      50% {
+      <span class="hljs-attribute">background-color</span>: pink;
+      }  
+      100% {
+      <span class="hljs-attribute">background-color</span>: indigo;
+      }
+  }
+  <span class="hljs-comment">/* Áp dụng animation vào phần tử */</span>
+  <span class="hljs-selector-tag">div</span> {  
+      <span class="hljs-attribute">width</span>: <span class="hljs-number">100px</span>;  
+      <span class="hljs-attribute">height</span>: <span class="hljs-number">100px</span>;  
+      <span class="hljs-attribute">background-color</span>: purple;  
+      <span class="hljs-attribute">animation-name</span>: example;  
+      <span class="hljs-attribute">animation-duration</span>: <span class="hljs-number">4s</span>;
+      <span class="hljs-attribute">animation-iteration-count</span>: <span class="hljs-number">5</span>;
+      <span class="hljs-attribute">animation-direction</span>: alternate;
+  }
+</code></pre>
+</li>
+<li><strong>chạy với giá trị alternate-reverse</strong><pre><code class="lang-css">  <span class="hljs-comment">/* Code animation */</span>
+  @<span class="hljs-keyword">keyframes</span> example { 
+      0% {
+      <span class="hljs-attribute">background-color</span>: crimso
+      } 
+      25% {
+      <span class="hljs-attribute">background-color</span>: lightsalmon;
+      }  
+      50% {
+      <span class="hljs-attribute">background-color</span>: pink;
+      }  
+      100% {
+      <span class="hljs-attribute">background-color</span>: indigo;
+      }
+  }
+  <span class="hljs-comment">/* Áp dụng animation vào phần tử */</span>
+  <span class="hljs-selector-tag">div</span> {  
+      <span class="hljs-attribute">width</span>: <span class="hljs-number">100px</span>;  
+      <span class="hljs-attribute">height</span>: <span class="hljs-number">100px</span>;  
+      <span class="hljs-attribute">background-color</span>: purple;  
+      <span class="hljs-attribute">animation-name</span>: example;  
+      <span class="hljs-attribute">animation-duration</span>: <span class="hljs-number">4s</span>;
+      <span class="hljs-attribute">animation-iteration-count</span>: <span class="hljs-number">5</span>;
+      <span class="hljs-attribute">animation-direction</span>: alternate-reverse;
+  }
+</code></pre>
+</li>
+</ul>
+</li>
+<li><h5 id="animation-timing-function">animation-timing-function</h5>
+<ul>
+<li>các giá trị thường dùng<ul>
+<li><strong>ease</strong>: tạo hiệu ứng chuyển động chậm rồi sau đó nhanh dần và kết thúc</li>
+<li><strong>linear</strong>: tạo hiệu ứng chuyển động từ bắt đầu đến kết thúc có tốc độ như nhau</li>
+<li><strong>ease-in</strong>: tạo hiệu ứng chuyển động chậm lúc bắt đầu</li>
+<li><strong>ease-out</strong>: tạo hiệu ứng chuyển động chậm đến kết thúc</li>
+<li><strong>ease-in-out</strong>: tạo hiệu ứng chuyển động chậm lúc bắt đầu đến lúc kết thúc</li>
+<li><strong>cubic-bezier(n,n,n,n)</strong>: xác định một hình dạng tùy chỉnh của đường thời gian<ul>
+<li>VD: <code>cubic-bezier(0.25, 0.1, 0.25, 1)</code><pre><code class="lang-html"><span class="hljs-meta">&lt;!DOCTYPE html&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">html</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">style</span>&gt;</span><span class="css">
+<span class="hljs-selector-tag">body</span>{
+<span class="hljs-attribute">background-color</span>:<span class="hljs-number">#e9d8f4</span>;
+<span class="hljs-attribute">border</span>: <span class="hljs-number">1px</span> solid black;
+<span class="hljs-attribute">position</span>: relative;
+<span class="hljs-attribute">padding</span>: auto;
+<span class="hljs-attribute">width</span>: <span class="hljs-number">600px</span>;
+}
+<span class="hljs-selector-tag">div</span> {
+<span class="hljs-attribute">width</span>: <span class="hljs-number">100px</span>;  
+<span class="hljs-attribute">height</span>: <span class="hljs-number">50px</span>;  
+<span class="hljs-attribute">background-color</span>: <span class="hljs-number">#58257b</span>;  
+<span class="hljs-attribute">color</span>:white;
+<span class="hljs-attribute">text-align</span>: center;  
+<span class="hljs-attribute">font-family</span>:arial;  
+<span class="hljs-attribute">position</span>: relative;  
+<span class="hljs-attribute">animation</span>: mymove <span class="hljs-number">5s</span> infinite
+}
+<span class="hljs-comment">/* Cú pháp tiêu chuẩn */</span>
+<span class="hljs-selector-id">#div1</span> {<span class="hljs-attribute">animation-timing-function</span>: linear;}
+<span class="hljs-selector-id">#div2</span> {<span class="hljs-attribute">animation-timing-function</span>: ease;}
+<span class="hljs-selector-id">#div3</span> {<span class="hljs-attribute">animation-timing-function</span>: ease-in;}
+<span class="hljs-selector-id">#div4</span> {<span class="hljs-attribute">animation-timing-function</span>: ease-out;}
+<span class="hljs-selector-id">#div5</span> {<span class="hljs-attribute">animation-timing-function</span>: ease-in-out;}
+<span class="hljs-comment">/* Cú pháp tiêu chuẩn */</span>
+@<span class="hljs-keyword">keyframes</span> mymove {  
+   <span class="hljs-selector-tag">from</span> {
+   <span class="hljs-attribute">left</span>: <span class="hljs-number">0px</span>;
+   }  
+   <span class="hljs-selector-tag">to</span> {
+   <span class="hljs-attribute">left</span>: <span class="hljs-number">500px</span>;
+   }
+}
+</span><span class="hljs-tag">&lt;/<span class="hljs-name">style</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"div1"</span>&gt;</span>linear<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">br</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"div2"</span>&gt;</span>ease<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">br</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"div3"</span>&gt;</span>ease-in<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">br</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"div4"</span>&gt;</span>ease-out<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">br</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"div5"</span>&gt;</span>ease-in-out<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span>
+</code></pre>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><blockquote>
+<h5 id="animation-fill-mode">animation-fill-mode</h5>
+<ul>
+<li>các giá trí thường dùng<ul>
+<li><strong>none</strong>: giá trị mặc định, không có bất kỳ hiệu ứng nào</li>
+<li><strong>forwards</strong>: giữ lại trạng thái của frame cuối cùng khi animation hoàn thành</li>
+<li><strong>backwards</strong>: giữ lại trạng thái của frame đầu tiên khi animation bắt đầu</li>
+<li><strong>both</strong>: kết hợp <code>forwards</code> và <code>backwards</code>, đồng thời phần tử sẽ có trạng thái của frame đầu tiên trước khi animation bắt đầu và giữ lại trạng thái của frame cuối cùng sau khi animation hoàn thành.
+<pre><code class="lang-html"><span class="hljs-meta">&lt;!DOCTYPE html&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">html</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">style</span>&gt;</span><span class="css">
+    <span class="hljs-selector-tag">body</span>{
+    <span class="hljs-attribute">background-color</span>:<span class="hljs-number">#e9d8f4</span>;
+    <span class="hljs-attribute">border</span>: <span class="hljs-number">1px</span> solid black;
+    <span class="hljs-attribute">position</span>: relative;
+    <span class="hljs-attribute">padding</span>: auto;
+    <span class="hljs-attribute">width</span>: <span class="hljs-number">600px</span>;
+    }
+    <span class="hljs-selector-tag">div</span> {
+    <span class="hljs-attribute">width</span>: <span class="hljs-number">100px</span>; 
+    <span class="hljs-attribute">height</span>: <span class="hljs-number">50px</span>; 
+    <span class="hljs-attribute">background-color</span>: <span class="hljs-number">#58257b</span>;
+    <span class="hljs-attribute">color</span>:white;
+    <span class="hljs-attribute">text-align</span>: center;
+    <span class="hljs-attribute">font-family</span>:arial;
+    <span class="hljs-attribute">position</span>: relative;
+    <span class="hljs-attribute">animation-name</span>: mymove;
+    <span class="hljs-attribute">animation-duration</span>: <span class="hljs-number">5s</span>;
+    <span class="hljs-attribute">animation-delay</span>: <span class="hljs-number">2s</span>;
+  }
+
+     <span class="hljs-selector-id">#div1</span> {<span class="hljs-attribute">animation-fill-mode</span>: none;}
+     <span class="hljs-selector-id">#div2</span> {<span class="hljs-attribute">animation-fill-mode</span>: forwards;}
+     <span class="hljs-selector-id">#div3</span> {<span class="hljs-attribute">animation-fill-mode</span>: backwards}
+     <span class="hljs-selector-id">#div4</span> {<span class="hljs-attribute">animation-fill-mode</span>: both;}
+     <span class="hljs-comment">/* Cú pháp tiêu chuẩn */</span>
+     @<span class="hljs-keyword">keyframes</span> mymove {
+         <span class="hljs-selector-tag">from</span> {
+         <span class="hljs-attribute">left</span>: <span class="hljs-number">0px</span>;
+         <span class="hljs-attribute">background-color</span>: purple
+         }
+         <span class="hljs-selector-tag">to</span> {
+         <span class="hljs-attribute">left</span>: <span class="hljs-number">500px</span>; <span class="hljs-attribute">background-color</span>: pink;
+         }
+    }
+
+</span><span class="hljs-tag">&lt;/<span class="hljs-name">style</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"div1"</span>&gt;</span>none<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">br</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"div2"</span>&gt;</span>forwards<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">br</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"div3"</span>&gt;</span>backwards<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">br</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"div4"</span>&gt;</span>both<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">br</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span>
+</code></pre>
+
+</li>
+</ul>
+</li>
+</ul>
+<h1 class="document-section" id="framework-css-bootstrap-tailwind">Framework CSS: Bootstrap, Tailwind</h1>
+<ul>
+<li><h2 id="">Khái niệm</h2>
+<ul>
+<li><h3 id="bootstrap">Bootstrap</h3>
+<ul>
+<li>framework CSS được phát triển bởi Twitter. Cung cấp các thành phần UI và các lớp CSS được thiết kế sẵn để xây dựng giao diện web nhanh chóng và dễ dàng</li>
+<li>Các thành phần UI bao gồm nút, biểu đồ, modals, thanh điều hướng, hình ảnh và nhiều hơn nữa</li>
+<li>Bootstrap cung cấp một lưới <strong>(grid system)</strong> linh hoạt giúp bạn tạo cấu trúc bố cục của trang web</li>
+<li>hỗ trợ <strong>responsive</strong> design, giúp giao diện phản hồi tốt trên nhiều kích thước màn hình</li>
+</ul>
+</li>
+<li><h3 id="tailwind">Tailwind</h3>
+<ul>
+<li>Tailwind CSS là một framework CSS utility-first. Cung cấp một tập hợp các lớp CSS nhỏ để bạn có thể tạo giao diện bằng cách kết hợp chúng lại</li>
+<li>Thay vì cung cấp các thành phần sẵn có như Bootstrap, Tailwind cho phép bạn tạo các thành phần tùy chỉnh theo ý muốn bằng cách kết hợp các lớp.</li>
+<li>Cung cấp một số lượng lớn các lớp CSS có thể sử dụng để điều chỉnh <strong>typography, màu sắc, bố cục, padding, margin</strong> và nhiều thuộc tính khác.</li>
+<li>hỗ trợ <strong>responsive</strong> design, giúp giao diện phản hồi tốt trên nhiều kích thước màn hình</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><h2 id="c-ch-s-d-ng">cách sử dụng</h2>
+<ul>
+<li><h3 id="bootstrap">bootstrap</h3>
+<ul>
+<li>Thêm bootstrap vào <strong>css</strong> hay <strong>javascript</strong> bằng các dòng sau vào trước thẻ <code>head</code>  trong HTML<pre><code class="lang-html">  <span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span>
+      <span class="hljs-comment">&lt;!-- thêm vào css --&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">link</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"</span> <span class="hljs-attr">rel</span>=<span class="hljs-string">"stylesheet"</span> <span class="hljs-attr">integrity</span>=<span class="hljs-string">"sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"</span> <span class="hljs-attr">crossorigin</span>=<span class="hljs-string">"anonymous"</span>&gt;</span> 
+      <span class="hljs-comment">&lt;!-- thêm vào javascript --&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"</span> <span class="hljs-attr">integrity</span>=<span class="hljs-string">"sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"</span> <span class="hljs-attr">crossorigin</span>=<span class="hljs-string">"anonymous"</span>&gt;</span><span class="undefined"></span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span>
+</code></pre>
+</li>
+<li>Sử dụng các tiện ích css <em>(cơ bản)</em> trong bootstrap<ul>
+<li><strong>1.lưới</strong> <em>(grid system)</em> <ul>
+<li>bootstrap sử dụng lưới 12 cột giúp xây dựng bố cục linh hoạt và responsive<pre><code class="lang-html">  &lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"container"</span>&gt;
+      &lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"row"</span>&gt;
+          &lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"col-md-6"</span>&gt;Nội dung cột <span class="hljs-number">1</span>&lt;/<span class="hljs-keyword">div</span>&gt;
+          &lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"col-md-6"</span>&gt;Nội dung cột <span class="hljs-number">2</span>&lt;/<span class="hljs-keyword">div</span>&gt;
+      &lt;/<span class="hljs-keyword">div</span>&gt;
+  &lt;/<span class="hljs-keyword">div</span>&gt;
+</code></pre>
+</li>
+</ul>
+</li>
+<li><strong>2.Button</strong> <em>(nút)</em><ul>
+<li>Cung cấp các lớp để tạo nút với nhiều kiểu dáng và màu sắc.<pre><code class="lang-html">&lt;div <span class="hljs-class"><span class="hljs-keyword">class</span></span>=<span class="hljs-string">"container"</span>&gt;
+  <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"row"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"btn btn-primary"</span>&gt;</span>Primary Button<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"btn btn-secondary"</span>&gt;</span>Secondary Button<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></span>
+&lt;<span class="hljs-regexp">/div&gt;</span>
+</code></pre>
+</li>
+</ul>
+</li>
+<li><strong>3.Typography</strong> <em>(Kiểu chữ)</em><ul>
+<li>Các lớp để tùy chỉnh kiểu chữ, kích thước và màu sắc.<pre><code class="lang-html">  &lt;<span class="hljs-selector-tag">div</span> class=<span class="hljs-string">"container"</span>&gt;
+      &lt;<span class="hljs-selector-tag">div</span> class=<span class="hljs-string">"row"</span>&gt;
+          &lt;<span class="hljs-selector-tag">h1</span> class=<span class="hljs-string">"display-4"</span>&gt;Tiêu đề lớn&lt;/h1&gt;
+          &lt;<span class="hljs-selector-tag">p</span> class=<span class="hljs-string">"lead"</span>&gt;Đoạn mô tả lớn và nổ<span class="hljs-selector-tag">i</span> bật.&lt;/p&gt;
+      &lt;/div&gt;
+  &lt;/div&gt;
+</code></pre>
+</li>
+</ul>
+</li>
+<li><strong>4.Colors</strong> <em>(Màu sắc)</em><ul>
+<li>Các lớp để định dạng màu sắc chữ, nền, biên và nhiều phần tử khác.<pre><code class="lang-html">  &lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"container"</span>&gt;
+      &lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"row"</span>&gt;
+          &lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"text-primary"</span>&gt;Chữ màu chính&lt;/<span class="hljs-keyword">div</span>&gt;
+          &lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"bg-success"</span>&gt;Nền màu thành công&lt;/<span class="hljs-keyword">div</span>&gt;
+      &lt;/<span class="hljs-keyword">div</span>&gt;
+  &lt;/<span class="hljs-keyword">div</span>&gt;
+</code></pre>
+</li>
+</ul>
+</li>
+<li><strong>5.Spacing</strong> <em>(Khoảng cách)</em><ul>
+<li>Các lớp để kiểm soát margin và padding của phần tử.<pre><code class="lang-html">  &lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"container"</span>&gt;
+      &lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"row"</span>&gt;
+          &lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"mt-3"</span>&gt;Khoảng cách trên&lt;/<span class="hljs-keyword">div</span>&gt;
+          &lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"p-4"</span>&gt;Khoảng cách padding&lt;/<span class="hljs-keyword">div</span>&gt;
+      &lt;/<span class="hljs-keyword">div</span>&gt;
+  &lt;/<span class="hljs-keyword">div</span>&gt;
+</code></pre>
+</li>
+</ul>
+</li>
+<li><strong>6.Alerts</strong> <em>(Thông báo)</em><ul>
+<li>Các lớp để tạo thông báo với các kiểu thành công, cảnh báo, lỗi và thông tin.<pre><code class="lang-html">  &lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"container"</span>&gt;
+      &lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"row"</span>&gt;
+          &lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"alert alert-success"</span>&gt;Thành công!&lt;/<span class="hljs-keyword">div</span>&gt;
+          &lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"alert alert-warning"</span>&gt;Cảnh báo!&lt;/<span class="hljs-keyword">div</span>&gt;
+      &lt;/<span class="hljs-keyword">div</span>&gt;
+  &lt;/<span class="hljs-keyword">div</span>&gt;
+</code></pre>
+</li>
+</ul>
+</li>
+<li><strong>Forms</strong> <em>(Biểu mẫu)</em><ul>
+<li>Các lớp để tạo biểu mẫu với các kiểu input, nút và mục chọn.<pre><code class="lang-html">  &lt;div <span class="hljs-class"><span class="hljs-keyword">class</span></span>=<span class="hljs-string">"container"</span>&gt;
+      <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"row"</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">form</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"form-control"</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"text"</span> <span class="hljs-attr">placeholder</span>=<span class="hljs-string">"Nhập thông tin"</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"btn btn-primary"</span>&gt;</span>Gửi<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+          <span class="hljs-tag">&lt;/<span class="hljs-name">form</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></span>
+</code></pre>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<pre><code>- ### Tailwind
+    - **Cài đặt tailwind**
+        - muốn cài đặt tailwind chúng ta bắt buộc cần phải tải **node.js** vào máy trước
+        - cái đặt tailwind css qua **npm** bằng cách chạy câu lệnh sau
+            - `mpn install tailwindcss`
+    - **tạo tệp cấu hình**
+        - sau khi cài đặt, cần tạo cấu hình có tailwind bằng cách chạy câu lệnh sau
+            - `npx tailwindcss init`
+            -  tệp cấu hình **`tailwind.config.js`** sẽ được tạo ra
+    - **tích hợp với css**
+        - Tạo một tệp CSS và nhập Tailwind CSS vào bằng cách thêm các dòng sau vào tệp CSS
+            ```css
+            @<span class="hljs-keyword">import</span> <span class="hljs-string">'tailwindcss/base'</span>; 
+            @<span class="hljs-keyword">import</span> <span class="hljs-string">'tailwindcss/components'</span>; 
+            @<span class="hljs-keyword">import</span> <span class="hljs-string">'tailwindcss/utilities'</span>;
+            ```
+        - &gt;Đảm bảo rằng tệp CSS này được liên kết với trang HTML của bạn.
+    - **Sử dụng các lớp CSS**
+        - **<span class="hljs-number">1.</span> Margin và Padding:**
+            - `m-{size}`: margin (ngoại vi).
+            - `p-{size}`: padding (khoảng cách bên trong).
+            - Các giá trị `{size}: <span class="hljs-number">0</span>, <span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>, <span class="hljs-number">4</span>, <span class="hljs-number">5</span>, <span class="hljs-number">6</span>, <span class="hljs-number">8</span>, <span class="hljs-number">10</span>, <span class="hljs-number">12</span>, <span class="hljs-number">16</span>, <span class="hljs-number">20</span>, <span class="hljs-number">24</span>, <span class="hljs-number">32</span>, <span class="hljs-number">40</span>, <span class="hljs-number">48</span>, <span class="hljs-number">56</span>, <span class="hljs-number">64</span>, auto.`
+                ```html
+                &lt;div <span class="hljs-keyword">class</span>=<span class="hljs-string">"container"</span>&gt;
+                    &lt;div <span class="hljs-keyword">class</span>=<span class="hljs-string">"row"</span>&gt;
+                        &lt;div <span class="hljs-keyword">class</span>=<span class="hljs-string">"m-4"</span>&gt;Margin <span class="hljs-number">4</span>&lt;/div&gt;
+                        &lt;div <span class="hljs-keyword">class</span>=<span class="hljs-string">"p-2"</span>&gt;Padding <span class="hljs-number">2</span>&lt;/div&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+                ```
+        - **<span class="hljs-number">2.</span> Width và Height:**
+            - `w-{size}`: width (chiều rộng).
+            - `h-{size}`: height (chiều cao).
+            - Các giá trị `{size}: <span class="hljs-number">0</span>, <span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>, <span class="hljs-number">4</span>, <span class="hljs-number">5</span>, <span class="hljs-number">6</span>, <span class="hljs-number">8</span>, <span class="hljs-number">10</span>, <span class="hljs-number">12</span>, <span class="hljs-number">16</span>, <span class="hljs-number">20</span>, <span class="hljs-number">24</span>, <span class="hljs-number">32</span>, <span class="hljs-number">40</span>, <span class="hljs-number">48</span>, <span class="hljs-number">56</span>, <span class="hljs-number">64</span>, auto, px, full.`
+                ```html
+                &lt;div <span class="hljs-keyword">class</span>=<span class="hljs-string">"container"</span>&gt;
+                    &lt;div <span class="hljs-keyword">class</span>=<span class="hljs-string">"row"</span>&gt;
+                        &lt;div <span class="hljs-keyword">class</span>=<span class="hljs-string">"m-4"</span>&gt;Margin <span class="hljs-number">4</span>&lt;/div&gt;
+                        &lt;div <span class="hljs-keyword">class</span>=<span class="hljs-string">"p-2"</span>&gt;Padding <span class="hljs-number">2</span>&lt;/div&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+                ```
+        - **<span class="hljs-number">3.</span> Background và Text Color:**
+            - `bg-{color}`: background color.
+            - `text-{color}`: text color.
+            -  Các giá trị `{color}: gray, red, blue, green, yellow, indigo, purple, pink.` và nhiều màu khác.
+                ```html
+                &lt;div <span class="hljs-keyword">class</span>=<span class="hljs-string">"container"</span>&gt;
+                    &lt;div <span class="hljs-keyword">class</span>=<span class="hljs-string">"row"</span>&gt;
+                        &lt;div <span class="hljs-keyword">class</span>=<span class="hljs-string">"bg-green-300 text-white"</span>&gt;Background Green, Text White&lt;/div&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+                ```
+        - **<span class="hljs-number">4.</span> Typography:**
+            - `text-{size}`: kích thước chữ.
+            - `font-{family}`: kiểu font chữ.
+            - `font-{weight}`: độ đậm nhẹ của font.
+            - Các giá trị `{size}`: `xs`, `sm`, `base`, `lg`, `xl`, `<span class="hljs-number">2</span>xl`, `<span class="hljs-number">3</span>xl`, `<span class="hljs-number">4</span>xl`, `<span class="hljs-number">5</span>xl`, `<span class="hljs-number">6</span>xl`, `<span class="hljs-number">7</span>xl`, `<span class="hljs-number">8</span>xl`, `<span class="hljs-number">9</span>xl`.
+            - Các giá trị `{family}`: `sans`, `serif`, `mono`.
+                ```html
+                &lt;div <span class="hljs-keyword">class</span>=<span class="hljs-string">"container"</span>&gt;
+                    &lt;div <span class="hljs-keyword">class</span>=<span class="hljs-string">"row"</span>&gt;
+                        &lt;h2 <span class="hljs-keyword">class</span>=<span class="hljs-string">"text-3xl font-bold"</span>&gt;Header <span class="hljs-number">2</span> <span class="hljs-keyword">with</span> Large Font&lt;/h2&gt;
+                        &lt;p <span class="hljs-keyword">class</span>=<span class="hljs-string">"text-gray-600"</span>&gt;Gray Text&lt;/p&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+                ```
+        - **<span class="hljs-number">5.</span> Display và Flexbox:**
+            - `block`: Hiển thị kiểu block.
+            - `<span class="hljs-keyword">inline</span>-block`: Hiển thị kiểu <span class="hljs-keyword">inline</span> block.
+            - `flex`: Hiển thị kiểu flex.
+            - `justify-{alignment}`: Canh chỉnh các phần tử con theo chiều ngang.
+            - `items-{alignment}`: Canh chỉnh các phần tử con theo chiều dọc.
+                ```html
+                &lt;div <span class="hljs-keyword">class</span>=<span class="hljs-string">"container"</span>&gt;
+                    &lt;div <span class="hljs-keyword">class</span>=<span class="hljs-string">"row"</span>&gt;
+                        &lt;div <span class="hljs-keyword">class</span>=<span class="hljs-string">"flex justify-center items-center h-24 bg-indigo-200"</span>&gt;
+                          &lt;span&gt;Centered Content&lt;/span&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+                ```
+        - **<span class="hljs-number">6.</span> Border và Radius:**
+            - `border`: Hiển thị đường viền.
+            - `border-{width}`: Độ dày đường viền.
+            - `rounded`: Bo tròn các góc.
+            - `rounded-{size}`: Độ cong các góc.
+            - Các giá trị `{size}`: `none`, `sm`, `md`, `lg`, `full`.
+                ```html
+                &lt;div <span class="hljs-keyword">class</span>=<span class="hljs-string">"container"</span>&gt;
+                    &lt;div <span class="hljs-keyword">class</span>=<span class="hljs-string">"row"</span>&gt;
+                        &lt;div <span class="hljs-keyword">class</span>=<span class="hljs-string">"border rounded-lg p-3"</span>&gt;Border <span class="hljs-keyword">with</span> Rounded Corners&lt;/div&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+                ```
+        - **<span class="hljs-number">7.</span> Positioning:**
+            - `absolute`: Vị trí tuyệt đối.
+            - `relative`: Vị trí tương đối.
+            - `fixed`: Vị trí cố định.
+            - `top-{size}`: Canh chỉnh phía trên.
+            - `right-{size}`: Canh chỉnh phía bên phải.
+                ```html
+                &lt;div <span class="hljs-keyword">class</span>=<span class="hljs-string">"container"</span>&gt;
+                    &lt;div <span class="hljs-keyword">class</span>=<span class="hljs-string">"row"</span>&gt;
+                        &lt;div <span class="hljs-keyword">class</span>=<span class="hljs-string">"relative"</span>&gt;
+                          &lt;div <span class="hljs-keyword">class</span>=<span class="hljs-string">"absolute top-0 right-0 bg-red-400"</span>&gt;Top Right&lt;/div&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+                ```
+        - **<span class="hljs-number">8.</span> Hover và Focus:**
+            - `hover:bg-{color}`: Background color khi hover.
+            - `focus:outline-none`: Loại bỏ viền khi focus.
+                ```html
+                &lt;div <span class="hljs-keyword">class</span>=<span class="hljs-string">"container"</span>&gt;
+                    &lt;div <span class="hljs-keyword">class</span>=<span class="hljs-string">"row"</span>&gt;
+                        &lt;button <span class="hljs-keyword">class</span>=<span class="hljs-string">"bg-blue-500 hover:bg-blue-700 focus:outline-none text-white py-2 px-4"</span>&gt;
+                          Hover and Focus Effect
+                        &lt;/button&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+                ```
+</code></pre>
+		</div>
+  </div>
+ 
+  <footer class="bg-dark py-4">
+    <div class="footer">
+      <div class="row">
+
+        <div class="col-md-6">
+          <p>&copy; 2023 Your Company</p>
+        </div>
+        <div class="col-md-6 text-md-right">
+          <p>Contact: info@example.com</p>
+        </div>
+        <div class="col-md-6 text-md-right"  style="margin: 0 30% 0 30%;">
+          <a href="#">Privacy Policy</a> | 
+          <a href="#">Terms of Use</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>

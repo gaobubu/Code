@@ -1,0 +1,765 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/default.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/languages/go.min.js"></script>  
+    <script>hljs.highlightAll();</script>
+    <script src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
+    <title>EXERCITE</title>
+</head>
+<body>
+  <header>
+    <div class="logo">My Website</div>
+    <nav class="navigation">
+      <a href="#">A</a>
+      <a href="#">B</a>
+      <a href="#">C</a>
+      <a href="#">D</a>
+      <a href="#">E</a>
+    </nav>
+  </header>
+  <div class="container">
+    <div id="sticky-table">
+      <div id="sticky">
+        <a href="#c-ch-s-d-ng-internal-external-" class="doc-title">Internal/External</a>
+        <a href="#bi-n-khai-b-o-t-t-n-scope-" class="doc-title">Biến</a>
+        <a href="#data-type-string-number-boolean-object-array-null-undefined-" class="doc-title">Data Type</a>
+        <a href="#data-struct-array-json-set-map-" class="doc-title">Data struct </a>
+        <a href="#loop-for-while-do-while-" class="doc-title">Loop </a>
+        <a href="#conditional-statements-if-else-switch-" class="doc-title">Conditional statements</a>
+        <a href="#x-l-s-ki-n-onclick-" class="doc-title">Xử lý sự kiện (onclick,...)</a>
+        <a href="#functions-function-parameter-arrow-funtion-" class="doc-title">Functions</a>
+        <a href="#l-m-vi-c-v-i-api-xmlhttprequest-fetch-" class="doc-title">XMLHTTPRequest, Fetch</a>
+      </div>
+    </div>
+    <div id="sidebar">
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingOne">
+          <button class="accordion-button dropdown-toggle" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+            HTML, CSS, JavaScript
+          </button>
+        </h2>
+        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+          <div class="accordion-body " >
+            <a href="html.html">HTML</a>
+          </div>
+        </div>
+        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            <a href="Css.html">CSS</a>
+          </div>
+        </div>
+        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+          <div class="accordion-body active ">
+            <a href="Javascript.html">JavaScript</a>
+          </div>
+        </div>
+      </div>
+        
+            
+      <div class="accordion-item">
+       <h2 class="accordion-header" id="headingTwo">
+          <button class="accordion-button dropdown-toggle" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+            Client, Server, Git
+          </button>
+          </h2>
+        <div id="collapseTwo" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            <a href="HTTP.html">HTTP request</a>
+          </div>
+        </div>
+        <div id="collapseTwo" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            <a href="Client&Server.html">Client & Server</a>
+          </div>
+        </div>
+        <div id="collapseTwo" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            <a href="Git.html">Git</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+    <div id="Content-doc" class="document-content">
+        <h1 id="kh-i-ni-m">Khái niệm</h1>
+<ul>
+<li><p>JavaScript (JS) là một ngôn ngữ lập trình thông dịch, thường được sử dụng để thêm tính năng tương tác và động cho các trang web. Ban đầu, JavaScript được phát triển để thực hiện các tác vụ cơ bản trên giao diện người dùng trong trình duyệt web. Tuy nhiên, qua thời gian, nó đã trở thành một ngôn ngữ lập trình phía máy khách (client-side) mạnh mẽ và đa dạng.</p>
+<ol>
+<li><p><strong>Biến (Variables)</strong>: Được sử dụng để lưu trữ dữ liệu như chuỗi (string), số (number), đối tượng (object), và nhiều loại dữ liệu khác. Khai báo biến bằng cách sử dụng từ khóa <code>var</code>, <code>let</code>, hoặc <code>const</code>.</p>
+</li>
+<li><p><strong>Hàm (Functions)</strong>: Là một khối mã thực hiện một nhiệm vụ cụ thể. JavaScript cho phép bạn định nghĩa và sử dụng các hàm riêng biệt.</p>
+</li>
+<li><p><strong>Sự kiện (Events)</strong>: JavaScript cho phép bạn phản ứng với các sự kiện trên trang web, như nhấp chuột, gõ phím, hoặc thay đổi kích thước cửa sổ trình duyệt.</p>
+</li>
+<li><p><strong>DOM (Document Object Model)</strong>: Là một cấu trúc biểu diễn trang HTML, cho phép JavaScript tương tác và thay đổi nội dung, thuộc tính và cấu trúc của trang web.</p>
+</li>
+<li><p><strong>Biểu thức điều kiện (Conditional Statements)</strong>: Câu lệnh <code>if</code>, <code>else if</code>, và <code>else</code> được sử dụng để kiểm tra điều kiện và thực hiện mã khác nhau dựa trên kết quả của điều kiện.</p>
+</li>
+<li><p><strong>Vòng lặp (Loops)</strong>: Ví dụ như vòng lặp <code>for</code> và <code>while</code>, để lặp lại một tập hợp các câu lệnh một số lần hoặc cho đến khi một điều kiện không còn đúng.</p>
+</li>
+<li><p><strong>Mảng (Arrays)</strong>: Là cấu trúc dữ liệu cho phép lưu trữ nhiều giá trị trong một biến duy nhất. Mảng được sử dụng rộng rãi để quản lý danh sách dữ liệu.</p>
+</li>
+<li><p><strong>Đối tượng (Objects)</strong>: Là một tập hợp các cặp khóa-giá trị, cho phép bạn tạo ra các đối tượng có thuộc tính và phương thức riêng.</p>
+</li>
+<li><p><strong>Bất đồng bộ (Asynchronous)</strong>: JavaScript hỗ trợ thực hiện các tác vụ bất đồng bộ thông qua sử dụng callback, Promise, và từ ES6 trở đi, Async/Await. Điều này cho phép xử lý các tác vụ như tải dữ liệu từ máy chủ mà không làm đứng giao diện người dùng</p>
+<h1 class="document-section" id="c-ch-s-d-ng-internal-external-">Cách sử dụng (Internal/External)</h1>
+</li>
+</ol>
+</li>
+<li>JavaScript có thể được sử dụng trong các trang web bằng cách nhúng mã JavaScript vào trong HTML</li>
+<li><p>Có 2 cách nhúng mã js vào trong HTML</p>
+<ul>
+<li><h5 id="internal-javascript">Internal JavaScript</h5>
+<ul>
+<li><p>Mã JavaScript được đặt trực tiếp trong thẻ <code>&lt;script&gt;</code> bên trong tài liệu HTML. Chỉ nên sử dụng với các tác vụ nhỏ hoặc tạm thời</p>
+<pre><code class="lang-html">  <span class="hljs-meta">&lt;!DOCTYPE html&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">html</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">title</span>&gt;</span>Internal JavaScript<span class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">h1</span>&gt;</span>Hello, world!<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
+
+      <span class="hljs-tag">&lt;<span class="hljs-name">script</span>&gt;</span><span class="actionscript">
+          <span class="hljs-comment">// Mã JavaScript</span>
+          alert(<span class="hljs-string">"This is an internal JavaScript example."</span>);
+      </span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span>
+</code></pre>
+<blockquote>
+<p>Lưu ý rằng các đoạn mã JavaScript nội tại thường được đặt bên trong thẻ <code>&lt;head&gt;</code> hoặc <code>&lt;body&gt;</code> của tài liệu HTML.</p>
+</blockquote>
+</li>
+</ul>
+</li>
+<li><h5 id="external-javascript">External JavaScript</h5>
+<ul>
+<li>Mã JavaScript được viết trong các tệp riêng biệt với phần mở rộng <code>.js</code>. Sau đó, bạn có thể nhúng tệp JavaScript này vào tài liệu HTML bằng cách sử dụng thẻ <code>&lt;script&gt;</code> với thuộc tính <code>src</code> để chỉ định đường dẫn đến tệp JavaScript.</li>
+<li>Ví dụ tạo một tệp có tên <code>myscript.js</code><pre><code class="lang-js">  <span class="hljs-comment">// File: myscript.js</span>
+  <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">showMessage</span><span class="hljs-params">()</span> </span>{
+      alert(<span class="hljs-string">"This message is from an external JavaScript file."</span>);
+  }
+</code></pre>
+</li>
+<li><p>trong tài liệu HTML, có thể nhúng tệp JavaScript bên ngoài như sau</p>
+<pre><code class="lang-html">  <span class="hljs-meta">&lt;!DOCTYPE html&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">html</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">title</span>&gt;</span>External JavaScript<span class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"path/to/myscript.js"</span>&gt;</span><span class="undefined"></span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">h1</span>&gt;</span>Hello, world!<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
+
+      <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">onclick</span>=<span class="hljs-string">"showMessage()"</span>&gt;</span>Click me<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span>
+</code></pre>
+<ul>
+<li>Trong ví dụ trên, khi người dùng nhấp vào nút &quot;Click me&quot;, hàm <code>showMessage()</code> từ tệp <code>myscript.js</code> sẽ được gọi và hiển thị cảnh báo.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h1 class="document-section" id="bi-n-khai-b-o-t-t-n-scope-">Biến (khai báo, đặt tên, scope)</h1>
+<ul>
+<li><h2 id="1-khai-b-o-bi-n">1.Khai báo biến</h2>
+<ul>
+<li>Sử dụng các từ khóa <code>var</code>, <code>let</code>, hoặc <code>const</code>. Tùy thuộc vào từ khóa mà bạn sử dụng</li>
+<li><p>Biến có thể có <strong>phạm vi (scope)</strong> và khả năng <strong>thay đổi (mutable)</strong> khác nhau</p>
+<ul>
+<li><code>var</code>: Khi ta khai báo lại biến bên trong một block code khác với từ khóa <code>var</code> thì nó sẽ ảnh hướng đến biến cùng tên ở bên ngoài block đó.<pre><code class="lang-js">  <span class="hljs-keyword">var</span> a = <span class="hljs-number">10</span>;
+  <span class="hljs-comment">//--&gt; ở đây a = 10</span>
+  {
+      <span class="hljs-keyword">var</span> a = <span class="hljs-number">5</span>;
+      <span class="hljs-comment">//--&gt; a = 5;</span>
+  }
+  <span class="hljs-comment">//--&gt; a = 5</span>
+</code></pre>
+<blockquote>
+<p>Việc biến <code>a</code> nhận giá trị mới trong block code là do biến được khai báo bằng <code>var</code> sẽ có <strong>Global scope</strong> .</p>
+</blockquote>
+</li>
+<li><code>let</code> và <code>count</code>:  khai báo bên trong một block code thì sẽ không ảnh hưởng gì đến biến có cùng tên đã được khai báo bên ngoài block trước đó.<pre><code class="lang-js">  var a = <span class="hljs-number">1</span>, b = <span class="hljs-number">2</span>;
+  <span class="hljs-comment">//--&gt; Tại đây a = 1 và b = 2</span>
+  {
+      let a = <span class="hljs-number">5</span>;
+      const b = <span class="hljs-number">10</span>;
+      <span class="hljs-comment">//--&gt; a ở đây bằng 5, b bằng 10</span>
+  }
+  <span class="hljs-comment">//--&gt; a ở đây vẫn bằng 1 và b vẫn bằng 2</span>
+</code></pre>
+</li>
+<li><p><strong>Lưu ý : các biến không được khai báo thì sẽ không tồn tại, tuy nhên nếu biến không được khai báo mà ta gián giá trị cho nó thì nó trở thành một biến có &#39;Global Scope&#39; và có kiểu dữ liệu trùng với kiểu giá trị mà nó được gán đó nhé</strong></p>
+<pre><code class="lang-js">  // Biế<span class="hljs-built_in">n</span> x chưa được khai báo, nhưng khi gá<span class="hljs-built_in">n</span> giá trị cho <span class="hljs-built_in">n</span>ó, <span class="hljs-built_in">n</span>ó trở thành biế<span class="hljs-built_in">n</span> toà<span class="hljs-built_in">n</span> cục
+  x = <span class="hljs-number">10</span>;
+  console.log(x); // <span class="hljs-number">10</span>
+
+  // Biế<span class="hljs-built_in">n</span> y cũng chưa được khai báo, nhưng khi gá<span class="hljs-built_in">n</span> giá trị là mộ<span class="hljs-built_in">t</span> chuỗi, <span class="hljs-built_in">n</span>ó trở thành biế<span class="hljs-built_in">n</span> toà<span class="hljs-built_in">n</span> cục với kiểu dữ liệu là string
+  y = <span class="hljs-string">"Hello, world!"</span>;
+  console.log(y); // Hello, world!
+
+  // Biế<span class="hljs-built_in">n</span> z chưa được khai báo, khi gá<span class="hljs-built_in">n</span> giá trị là mộ<span class="hljs-built_in">t</span> mảng, <span class="hljs-built_in">n</span>ó trở thành biế<span class="hljs-built_in">n</span> toà<span class="hljs-built_in">n</span> cục với kiểu dữ liệu là array
+  z = [<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>];
+  console.log(z); // [<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>]
+</code></pre>
+</li>
+</ul>
+</li>
+<li><h2 id="2-t-t-n">2.Đặt tên</h2>
+<ul>
+<li>Tên biến trong JavaScript phải tuân theo một số quy tắc:<ul>
+<li>Bắt đầu bằng một chữ cái (a-z, A-Z) hoặc dấu gạch dưới (_).</li>
+<li>Có thể chứa chữ cái, số, hoặc dấu gạch dưới.</li>
+<li>Không được sử dụng các từ khóa đã được định nghĩa trong JavaScript (như <code>if</code>, <code>for</code>, <code>function</code>, v.v.).</li>
+<li>JavaScript phân biệt chữ hoa và chữ thường trong tên biến (<code>myVariable</code> và <code>MyVariable</code> được xem xét là hai biến khác nhau).</li>
+<li><a href="https://viblo.asia/p/cach-dat-ten-dep-trong-javascript-QpmlerNM5rd">link tham khảo</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><h2 id="3-scope">3.Scope</h2>
+<ul>
+<li><p>Phạm vi của biến xác định nơi mà biến có thể được truy cập và sử dụng trong mã JavaScript. Có ba loại phạm vi:</p>
+<ul>
+<li><strong>Global Scope</strong>: Biến khai báo ở global scope có thể truy cập từ bất kỳ nơi nào trong mã JavaScript.</li>
+<li><strong>Function Scope</strong>: Biến khai báo bên trong một hàm chỉ có thể truy cập từ bên trong hàm đó.</li>
+<li><strong>Block Scope</strong>: Biến khai báo bên trong một khối ({}) chỉ có thể truy cập từ bên trong khối đó.</li>
+<li><p>Dùng <code>var</code> trong hàm sẽ có <strong>phạm vi hàm</strong>, còn <code>let</code> và <code>const</code> sẽ có <strong>phạm vi khối.</strong></p>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> globalVar = <span class="hljs-string">"Global variable"</span>; <span class="hljs-comment">// Biến global</span>
+
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">myFunction</span>(<span class="hljs-params"></span>) </span>{
+  <span class="hljs-keyword">var</span> <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-title">Var</span> = "<span class="hljs-title">Function</span>-<span class="hljs-title">scoped</span> <span class="hljs-title">variable</span>"</span>; <span class="hljs-comment">// Biến phạm vi hàm</span>
+  <span class="hljs-keyword">if</span> (<span class="hljs-literal">true</span>) {
+      <span class="hljs-keyword">let</span> blockVar = <span class="hljs-string">"Block-scoped variable"</span>; <span class="hljs-comment">// Biến phạm vi khối</span>
+  }
+  <span class="hljs-built_in">console</span>.log(<span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-title">Var</span>)</span>; <span class="hljs-comment">// Có thể truy cập ở trong hàm</span>
+  <span class="hljs-built_in">console</span>.log(globalVar); <span class="hljs-comment">// Có thể truy cập ở mọi nơi</span>
+  <span class="hljs-built_in">console</span>.log(blockVar); <span class="hljs-comment">// Sẽ gây lỗi vì không trong phạm vi</span>
+}
+
+myFunction();
+<span class="hljs-built_in">console</span>.log(globalVar); <span class="hljs-comment">// Có thể truy cập ở mọi nơi</span>
+<span class="hljs-built_in">console</span>.log(<span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-title">Var</span>)</span>; <span class="hljs-comment">// Sẽ gây lỗi vì không trong phạm vi</span>
+<span class="hljs-built_in">console</span>.log(blockVar); <span class="hljs-comment">// Sẽ gây lỗi vì không trong phạm vi</span>
+</code></pre>
+</li>
+</ul>
+</li>
+<li><strong>Lưu ý rằng việc sử dụng <code>var</code> nên được tránh để tránh các vấn đề liên quan đến quản lý phạm vi. Thay vào đó, <code>let</code> và <code>const</code> là những lựa chọn tốt hơn cho việc khai báo biến trong JavaScript.</strong>
+  <h1 class="document-section" id="data-type-string-number-boolean-object-array-null-undefined-">Data Type (string, number, boolean, object, array, null, undefined)</h1>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>Trong JavaScript, có một số kiểu dữ liệu cơ bản để đại diện cho các loại giá trị khác nhau. Dưới đây là một số kiểu dữ liệu quan trọng:</p>
+<ol>
+<li><p><strong>String (Chuỗi)</strong>: Sử dụng để đại diện cho các chuỗi ký tự, được bao quanh bởi dấu nháy đơn (&#39;&#39;) hoặc dấu nháy kép (&quot;&quot;).</p>
+<pre><code class="lang-js"><span class="hljs-attribute"> var greeting</span> = <span class="hljs-string">"Hello, world!"</span>;
+</code></pre>
+</li>
+<li><p><strong>Number (Số)</strong>: Đại diện cho các số nguyên, số thập phân hoặc số mũ.</p>
+<pre><code class="lang-js"><span class="hljs-attribute"> var age</span> = 25; 
+<span class="hljs-attribute"> var pi</span> = 3.14159;
+</code></pre>
+</li>
+<li><strong>Boolean (Luận lý)</strong>: Đại diện cho giá trị <code>true</code> (đúng) hoặc <code>false</code> (sai), thường được sử dụng trong các biểu thức điều kiện.<pre><code class="lang-js"><span class="hljs-attribute"> var isStudent</span> = true; <span class="hljs-attribute">v</span><span class="hljs-attribute">a</span><span class="hljs-attribute">r</span> <span class="hljs-attribute">i</span><span class="hljs-attribute">s</span><span class="hljs-attribute">L</span><span class="hljs-attribute">o</span><span class="hljs-attribute">g</span><span class="hljs-attribute">g</span><span class="hljs-attribute">e</span><span class="hljs-attribute">d</span><span class="hljs-attribute">I</span><span class="hljs-attribute">n</span> = false;
+</code></pre>
+</li>
+<li><strong>Object (Đối tượng)</strong>: Là một cấu trúc dữ liệu phức tạp bao gồm nhiều thuộc tính (properties) và phương thức (methods) liên quan đến một đối tượng cụ thể.<pre><code class="lang-js"> <span class="hljs-keyword">var</span> person = {     
+ <span class="hljs-attr">firstName</span>: <span class="hljs-string">"John"</span>,     
+ <span class="hljs-attr">lastName</span>: <span class="hljs-string">"Doe"</span>,     
+ <span class="hljs-attr">age</span>: <span class="hljs-number">30</span>,     
+ <span class="hljs-attr">sayHello</span>: <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{         
+ <span class="hljs-built_in">console</span>.log(<span class="hljs-string">"Hello!"</span>);     
+ } 
+ };
+</code></pre>
+</li>
+<li><p><strong>Array (Mảng)</strong>: Là một tập hợp các giá trị, thường được sắp xếp theo thứ tự và truy cập bằng chỉ số (index).</p>
+<pre><code class="lang-js"> var numbers = [<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>, <span class="hljs-number">4</span>, <span class="hljs-number">5</span>]; 
+ var fruits = [<span class="hljs-string">"apple"</span>, <span class="hljs-string">"banana"</span>, <span class="hljs-string">"orange"</span>];
+</code></pre>
+</li>
+<li><p><strong>Null</strong>: Đại diện cho giá trị không có hoặc không tồn tại. Nó là một kiểu dữ liệu đặc biệt chỉ có một giá trị là <code>null</code>.</p>
+<pre><code class="lang-js"> <span class="hljs-keyword">var</span> emptyValue = <span class="hljs-literal">null</span>;
+</code></pre>
+</li>
+<li><strong>Undefined</strong>: Đại diện cho một biến đã được khai báo nhưng chưa được gán giá trị hoặc tồn tại nhưng không có giá trị nào.<pre><code class="lang-js"> var undefinedVar<span class="hljs-comment">;</span>
+</code></pre>
+<blockquote>
+<p><strong>Các kiểu dữ liệu này cùng với các kiểu dữ liệu phức tạp khác như <code>function</code> và <code>symbol</code> tạo nên nền tảng cho việc lưu trữ và xử lý thông tin trong mã JavaScript.</strong></p>
+<h1 class="document-section" id="data-struct-array-json-set-map-">Data struct (Array, JSON, Set, Map)</h1>
+</blockquote>
+</li>
+</ol>
+</li>
+<li><p>Trong JavaScript, có một số cấu trúc dữ liệu hữu ích để quản lý và tổ chức dữ liệu. Dưới đây là một số cấu trúc dữ liệu quan trọng:</p>
+<ol>
+<li><strong>Array (Mảng)</strong>: Mảng là một cấu trúc dữ liệu tập hợp các phần tử được sắp xếp theo thứ tự và truy cập thông qua chỉ số (index). Các phần tử trong mảng có thể là bất kỳ kiểu dữ liệu nào.<pre><code class="lang-js"> var numbers = [<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>, <span class="hljs-number">4</span>, <span class="hljs-number">5</span>]; 
+ var fruits = [<span class="hljs-string">"apple"</span>, <span class="hljs-string">"banana"</span>, <span class="hljs-string">"orange"</span>];
+</code></pre>
+</li>
+<li><strong>JSON (JavaScript Object Notation)</strong>: JSON là một định dạng dữ liệu phổ biến được sử dụng để truyền và lưu trữ dữ liệu dưới dạng văn bản. Nó là một cách biểu diễn đối tượng và dữ liệu dạng cặp khóa-giá trị.<pre><code class="lang-js"><span class="hljs-attribute"> var person</span> = {     
+ <span class="hljs-string">"firstName"</span>: <span class="hljs-string">"John"</span>,     
+ <span class="hljs-string">"lastName"</span>: <span class="hljs-string">"Doe"</span>,     
+ <span class="hljs-string">"age"</span>: 30 };
+</code></pre>
+</li>
+<li><strong>Set</strong>: Set là một tập hợp dữ liệu không có thứ tự, không chứa các phần tử trùng lặp. Set thường được sử dụng để lưu trữ danh sách các giá trị duy nhất.<pre><code class="lang-js"> var uniqueNumbers = new Set([<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>, <span class="hljs-number">3</span>, <span class="hljs-number">4</span>, <span class="hljs-number">4</span>, <span class="hljs-number">5</span>]);
+</code></pre>
+</li>
+</ol>
+</li>
+</ul>
+<pre><code><span class="hljs-number">1</span>. **<span class="hljs-type">Map</span>**: <span class="hljs-type">Map</span> là một <span class="hljs-built_in">c</span>ấu trú<span class="hljs-built_in">c</span> dữ liệu cho phép ánh xạ giữa <span class="hljs-built_in">c</span>á<span class="hljs-built_in">c</span> khóa và giá trị tương ứng. <span class="hljs-type">M</span>ỗi khóa chỉ <span class="hljs-built_in">c</span>ó thể tương ứng với một giá trị và <span class="hljs-built_in">c</span>á<span class="hljs-built_in">c</span> khóa <span class="hljs-built_in">c</span>ó thể là bất kỳ kiểu dữ liệu nào.
+    ```js
+    <span class="hljs-keyword">var</span> ages = new <span class="hljs-type">Map</span>(); ages.<span class="hljs-keyword">set</span>(<span class="hljs-string">"John"</span>, <span class="hljs-number">30</span>); ages.<span class="hljs-keyword">set</span>(<span class="hljs-string">"Jane"</span>, <span class="hljs-number">25</span>);
+    ```
+    &gt;**<span class="hljs-type">Các</span> <span class="hljs-built_in">c</span>ấu trú<span class="hljs-built_in">c</span> dữ liệu này giúp bạn tổ chứ<span class="hljs-built_in">c</span> và xử lý dữ liệu một <span class="hljs-built_in">c</span>ách hiệu quả trong mã <span class="hljs-type">JavaScript</span>. <span class="hljs-type">Hãy</span> lựa chọn <span class="hljs-built_in">c</span>ấu trú<span class="hljs-built_in">c</span> dữ liệu phù hợp với nhu <span class="hljs-built_in">c</span>ầu <span class="hljs-built_in">c</span>ủa bạn để làm cho mã <span class="hljs-built_in">c</span>ủa bạn dễ đọ<span class="hljs-built_in">c</span> và dễ bảo trì hơn**
+</code></pre><h1 id="loop-for-while-do-while-" class="document-section">Loop (For, While, Do while)</h1>
+<ul>
+<li><p>Trong JavaScript, có ba loại vòng lặp chính để lặp lại một tập hợp các câu lệnh hoặc thực hiện một khối mã nhiều lần: vòng lặp <code>for</code>, <code>while</code> và <code>do while</code>.</p>
+<ol>
+<li><p><strong>Vòng lặp for</strong></p>
+<ul>
+<li>Vòng lặp <code>for</code> thường được sử dụng khi bạn biết chính xác số lần lặp lại cần thực hiện. Cú pháp của vòng lặp <code>for</code> như sau:<pre><code class="lang-js">  for (khởi <span class="hljs-built_in">t</span>ạo; điều kiệ<span class="hljs-built_in">n</span>; bước nhảy) {     
+  // Khối mã lệnh được thực thi trong mỗi lầ<span class="hljs-built_in">n</span> lặp 
+  }
+</code></pre>
+</li>
+<li>Ví dụ:<pre><code class="lang-js">  <span class="hljs-keyword">for</span> (<span class="hljs-keyword">var</span> i = <span class="hljs-number">0</span>; i &lt; <span class="hljs-number">5</span>; i++) {     
+      <span class="hljs-built_in">console</span>.log(<span class="hljs-string">"Iteration "</span> + i); 
+  }
+</code></pre>
+</li>
+</ul>
+</li>
+<li><p><strong>Vòng lặp while:</strong></p>
+<ul>
+<li>Vòng lặp <code>while</code> được sử dụng khi bạn không biết trước số lần lặp lại cần thực hiện và chỉ kiểm tra điều kiện trước khi thực hiện mỗi lần lặp.<pre><code class="lang-js">  while (điều kiệ<span class="hljs-built_in">n</span>) {     
+  // Khối mã lệnh được thực thi trong mỗi lầ<span class="hljs-built_in">n</span> lặp <span class="hljs-built_in">n</span>ếu điều kiệ<span class="hljs-built_in">n</span> đúng 
+  }
+</code></pre>
+</li>
+<li>Ví dụ:<pre><code class="lang-js">  var <span class="hljs-built_in">count</span> = <span class="hljs-number">0</span><span class="hljs-comment">; </span>
+  while (<span class="hljs-built_in">count</span> &lt; <span class="hljs-number">5</span>) {     
+      console.log(<span class="hljs-string">"Count: "</span> + <span class="hljs-built_in">count</span>)<span class="hljs-comment">;     </span>
+      <span class="hljs-built_in">count</span>++<span class="hljs-comment">; </span>
+  }
+</code></pre>
+</li>
+</ul>
+</li>
+<li><p><strong>Vòng lặp do while:</strong></p>
+<ul>
+<li>Vòng lặp <code>do while</code> tương tự với <code>while</code>, nhưng khối mã lệnh sẽ được thực hiện ít nhất một lần, ngay cả khi điều kiện không đúng.<pre><code class="lang-js">  do {     
+  // Khối mã lệnh được thực thi í<span class="hljs-built_in">t</span> nhấ<span class="hljs-built_in">t</span> mộ<span class="hljs-built_in">t</span> lầ<span class="hljs-built_in">n</span> 
+  } while (điều kiệ<span class="hljs-built_in">n</span>);
+</code></pre>
+</li>
+<li><p>Ví dụ:</p>
+<pre><code class="lang-js">  <span class="hljs-keyword">var</span> x = <span class="hljs-number">0</span>; 
+  <span class="hljs-keyword">do</span> {     
+      <span class="hljs-built_in">console</span>.log(<span class="hljs-string">"x = "</span> + x);     
+      x++; 
+  } <span class="hljs-keyword">while</span> (x &lt; <span class="hljs-number">3</span>);
+</code></pre>
+<blockquote>
+<p><strong>Các vòng lặp này cho phép bạn thực hiện các tác vụ lặp lại một cách linh hoạt, tùy theo nhu cầu của bạn. Hãy chọn vòng lặp phù hợp với tình huống cụ thể của bạn.</strong></p>
+<h1 id="conditional-statements-if-else-switch-" class="document-section">Conditional statements (If..else, Switch)</h1>
+</blockquote>
+</li>
+</ul>
+</li>
+</ol>
+</li>
+<li><p>Trong JavaScript, có hai cấu trúc điều kiện chính để thực hiện các câu lệnh hoặc khối mã khác nhau dựa trên điều kiện: câu lệnh <code>if..else</code> và cấu trúc <code>switch</code>.</p>
+<ol>
+<li><p><strong>Câu lệnh if..else:</strong></p>
+<ul>
+<li>Câu lệnh <code>if..else</code> cho phép bạn thực hiện một khối mã lệnh nếu điều kiện là đúng và một khối mã lệnh khác nếu điều kiện sai. Cú pháp của câu lệnh <code>if..else</code> như sau:<pre><code class="lang-js">  <span class="hljs-built_in">if</span> (điều kiệ<span class="hljs-built_in">n</span>) {     
+  // Khối mã lệnh thực thi <span class="hljs-built_in">n</span>ếu điều kiệ<span class="hljs-built_in">n</span> đúng 
+  } 
+  else {     // Khối mã lệnh thực thi <span class="hljs-built_in">n</span>ếu điều kiệ<span class="hljs-built_in">n</span> sai 
+  }
+</code></pre>
+</li>
+<li>Ví dụ:<pre><code class="lang-js">  <span class="hljs-keyword">var</span> age = <span class="hljs-number">18</span>;  
+  <span class="hljs-keyword">if</span> (age &gt;= <span class="hljs-number">18</span>) <span class="hljs-comment">{     
+      console.log("You are an adult."); 
+  }</span> <span class="hljs-keyword">else</span> <span class="hljs-comment">{     
+      console.log("You are not an adult yet."); 
+  }</span>
+</code></pre>
+</li>
+</ul>
+</li>
+<li><p><strong>Cấu trúc switch:</strong></p>
+<ul>
+<li>Cấu trúc <code>switch</code> cho phép bạn thực hiện một loạt các trường hợp khác nhau dựa trên giá trị của biểu thức. Cú pháp của cấu trúc <code>switch</code> như sau:<pre><code class="lang-js">  switch (biểu thức) {     
+      case giá <span class="hljs-built_in">tr</span>ị<span class="hljs-number">1</span>:         
+      // Khối mã lệnh thực thi nếu biểu thức <span class="hljs-built_in">tr</span>ùng với giá <span class="hljs-built_in">tr</span>ị<span class="hljs-number">1</span>         
+          <span class="hljs-built_in">break</span>;     
+      case giá <span class="hljs-built_in">tr</span>ị<span class="hljs-number">2</span>:         
+      // Khối mã lệnh thực thi nếu biểu thức <span class="hljs-built_in">tr</span>ùng với giá <span class="hljs-built_in">tr</span>ị<span class="hljs-number">2</span>         
+          <span class="hljs-built_in">break</span>;     
+          // Thêm các <span class="hljs-built_in">tr</span>ường hợp khác nếu cần     
+      default:         
+      // Khối mã lệnh thực thi nếu không có <span class="hljs-built_in">tr</span>ường hợp nào <span class="hljs-built_in">tr</span>ùng khớp }
+</code></pre>
+</li>
+<li>ví dụ<pre><code class="lang-js">  <span class="hljs-keyword">var</span> dayOfWeek = <span class="hljs-number">3</span>;  
+      <span class="hljs-keyword">switch</span> (dayOfWeek) {     
+          <span class="hljs-keyword">case</span> <span class="hljs-number">1</span>:         
+              <span class="hljs-built_in">console</span>.log(<span class="hljs-string">"Sunday"</span>);         
+              <span class="hljs-keyword">break</span>;     
+          <span class="hljs-keyword">case</span> <span class="hljs-number">2</span>:         
+              <span class="hljs-built_in">console</span>.log(<span class="hljs-string">"Monday"</span>);         
+              <span class="hljs-keyword">break</span>;    
+          <span class="hljs-keyword">case</span> <span class="hljs-number">3</span>:         
+              <span class="hljs-built_in">console</span>.log(<span class="hljs-string">"Tuesday"</span>);         
+              <span class="hljs-keyword">break</span>;        
+          <span class="hljs-keyword">default</span>:         
+              <span class="hljs-built_in">console</span>.log(<span class="hljs-string">"Invalid day"</span>); }
+</code></pre>
+</li>
+</ul>
+</li>
+</ol>
+</li>
+</ul>
+<pre><code>    &gt;**Cả hai cấu trúc điều kiện này cho phé<span class="hljs-selector-tag">p</span> bạn kiểm tra điều kiện và thực hiện các tác vụ khác nhau dự<span class="hljs-selector-tag">a</span> trên kết quả củ<span class="hljs-selector-tag">a</span> điều kiện đó. Sử dụng cấu trúc phù hợ<span class="hljs-selector-tag">p</span> vớ<span class="hljs-selector-tag">i</span> nhu cầu củ<span class="hljs-selector-tag">a</span> bạn để kiểm soát luồng thực hiện củ<span class="hljs-selector-tag">a</span> chương trình.**
+</code></pre><h1 class="document-section" id="x-l-s-ki-n-onclick-">Xử lý sự kiện (onclick,...)</h1>
+<ul>
+<li><p>Xử lý sự kiện trong JavaScript là cách bạn tạo sự tương tác và phản hồi của trang web khi người dùng thực hiện các hành động như nhấp chuột, gõ phím, hoặc thao tác trên giao diện người dùng. Dưới đây là cách bạn xử lý sự kiện bằng JavaScript:</p>
+<ol>
+<li><p><strong>Xử lý sự kiện onclick:</strong></p>
+<ul>
+<li><p>Sự kiện <code>onclick</code> được kích hoạt khi người dùng nhấp chuột vào một phần tử HTML. Bạn có thể xử lý sự kiện này bằng cách gắn một hàm vào thuộc tính <code>onclick</code> của phần tử.</p>
+<pre><code class="lang-html">  <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"myButton"</span>&gt;</span>Click me<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>  
+
+  <span class="hljs-tag">&lt;<span class="hljs-name">script</span>&gt;</span><span class="javascript"> 
+  <span class="hljs-built_in">document</span>.getElementById(<span class="hljs-string">"myButton"</span>).onclick = <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{     
+      alert(<span class="hljs-string">"Button clicked!"</span>); 
+  }; 
+  </span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+</code></pre>
+</li>
+</ul>
+</li>
+<li><p><strong>Xử lý sự kiện addEventListener:</strong></p>
+<ul>
+<li><p>Bạn cũng có thể sử dụng phương thức <code>addEventListener</code> để gắn các hàm xử lý sự kiện vào một phần tử HTML. Điều này cho phép bạn thêm nhiều hàm xử lý cho cùng một sự kiện.</p>
+<pre><code class="lang-html">  <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"myButton"</span>&gt;</span>Click me<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>  
+
+  <span class="hljs-tag">&lt;<span class="hljs-name">script</span>&gt;</span><span class="javascript"> 
+  <span class="hljs-built_in">document</span>.getElementById(<span class="hljs-string">"myButton"</span>).addEventListener(<span class="hljs-string">"click"</span>, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>)</span>{
+      alert(<span class="hljs-string">"Button clicked!"</span>); 
+  }); 
+  </span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+</code></pre>
+</li>
+</ul>
+</li>
+<li><p><strong>Xử lý sự kiện trên input:</strong></p>
+<ul>
+<li><p>Sự kiện <code>oninput</code> được kích hoạt khi người dùng thay đổi nội dung của một phần tử input.</p>
+<pre><code class="lang-html">  <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"myInput"</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"text"</span>&gt;</span>  
+
+  <span class="hljs-tag">&lt;<span class="hljs-name">script</span>&gt;</span><span class="javascript"> 
+  <span class="hljs-built_in">document</span>.getElementById(<span class="hljs-string">"myInput"</span>).oninput = <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{     
+      <span class="hljs-built_in">console</span>.log(<span class="hljs-string">"Input changed:"</span>, <span class="hljs-keyword">this</span>.value); 
+  }; 
+  </span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+</code></pre>
+</li>
+</ul>
+</li>
+</ol>
+</li>
+</ul>
+<pre><code><span class="hljs-number">4.</span> **Xử lý sự kiện trên form:**
+    - Sự kiện `<span class="javascript">onsubmit</span>` được kích hoạt khi người dùng gửi một biểu mẫu.
+        `<span class="javascript"></span>``<span class="javascript">html
+        &lt;form id=<span class="hljs-string">"myForm"</span>&gt;    
+            <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"text"</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"name"</span>&gt;</span>     
+            <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"submit"</span> <span class="hljs-attr">value</span>=<span class="hljs-string">"Submit"</span>&gt;</span> 
+        <span class="hljs-tag">&lt;/<span class="hljs-name">form</span>&gt;</span>  
+
+        <span class="hljs-tag">&lt;<span class="hljs-name">script</span>&gt;</span><span class="javascript"> 
+        <span class="hljs-built_in">document</span>.getElementById(<span class="hljs-string">"myForm"</span>).onsubmit = <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">event</span>) </span>{  
+            event.preventDefault(); <span class="hljs-comment">// Ngăn form gửi đi     </span>
+            <span class="hljs-keyword">var</span> formData = <span class="hljs-keyword">new</span> FormData(event.target);     
+            <span class="hljs-built_in">console</span>.log(<span class="hljs-string">"Form submitted:"</span>, formData.get(<span class="hljs-string">"name"</span>)); 
+        }; 
+        </span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+        </span></span>``<span class="javascript"><span class="xml"></span></span>`
+
+    &gt;Nhớ rằng việc xử lý sự kiện là một phần quan trọng của việc tạo trải nghiệm tương tác trên trang web.
+</code></pre><h1 class="document-section" id="functions-function-parameter-arrow-funtion-">Functions (Function parameter, arrow funtion)</h1>
+<ul>
+<li><p>Trong JavaScript, hàm (function) là một khối mã lệnh có thể được gọi và thực thi. Hàm giúp tổ chức mã của bạn thành các đơn vị tái sử dụng và dễ đọc. Dưới đây là cách bạn định nghĩa hàm, <strong>truyền tham số(Function parameter)</strong> và sử dụng <strong>hàm mũi tên (arrow function)</strong></p>
+<ul>
+<li><h2 id="function-parameter">Function parameter</h2>
+<ol>
+<li><h4 id="-nh-ngh-a-h-m">định nghĩa hàm</h4>
+<ul>
+<li>Để định nghĩa một hàm, bạn sử dụng từ khóa <code>function</code>, sau đó là tên hàm, danh sách các tham số trong dấu ngoặc đơn và khối mã lệnh bên trong dấu ngoặc nhọn.<pre><code class="lang-js">  <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">sayHello</span>(<span class="hljs-params">name</span>) </span>{     
+      <span class="hljs-built_in">console</span>.log(<span class="hljs-string">"Hello, "</span> + name + <span class="hljs-string">"!"</span>); 
+  }
+</code></pre>
+</li>
+<li><h4 id="truy-n-tham-s-khi-g-i-h-m">Truyền tham số khi gọi hàm</h4>
+</li>
+<li>Khi bạn gọi hàm, bạn có thể truyền giá trị hoặc đối tượng vào các tham số tương ứng trong cùng thứ tự<pre><code class="lang-js">  <span class="hljs-selector-tag">greet</span>(<span class="hljs-string">"Alice"</span>); <span class="hljs-comment">// Kết quả: Hello, Alice!</span>
+  <span class="hljs-selector-tag">greet</span>(<span class="hljs-string">"Bob"</span>); <span class="hljs-comment">// Kết quả: Hello, Bob!</span>
+</code></pre>
+</li>
+<li><h4 id="s-d-ng-gi-tr-tham-s-trong-h-m">Sử dụng giá trị tham số trong hàm</h4>
+</li>
+<li>Sau khi truyền tham số vào hàm, bạn có thể sử dụng giá trị của tham số bên trong khối mã lệnh của hàm<pre><code class="lang-js">  <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">multiply</span>(<span class="hljs-params">x, y</span>) </span>{
+      <span class="hljs-keyword">return</span> x * y;
+  }
+  <span class="hljs-built_in">console</span>.log(multiply(<span class="hljs-number">5</span>, <span class="hljs-number">3</span>)); <span class="hljs-comment">// Kết quả: 15</span>
+</code></pre>
+<blockquote>
+<p>Khi sử dụng tham số, hàm trở nên linh hoạt và có thể tái sử dụng cho nhiều tình huống khác nhau. Tham số cho phép bạn truyền dữ liệu vào hàm để thực hiện các tính toán hoặc xử lý dữ liệu cụ thể trong mỗi lần gọi hàm.</p>
+</blockquote>
+</li>
+<li><p>VD</p>
+<pre><code class="lang-js">  <span class="hljs-comment">// Định nghĩa hàm tính tổng của một danh sách số</span>
+  <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">calculateSum</span>(<span class="hljs-params">numbers</span>) </span>{
+      <span class="hljs-keyword">let</span> sum = <span class="hljs-number">0</span>;
+      <span class="hljs-keyword">for</span> (<span class="hljs-keyword">let</span> i = <span class="hljs-number">0</span>; i &lt; numbers.length; i++) {
+          sum += numbers[i];
+      }
+      <span class="hljs-keyword">return</span> sum;
+  }
+
+  <span class="hljs-comment">// Gọi hàm và truyền một mảng các số làm tham số</span>
+  <span class="hljs-keyword">const</span> numbersList = [<span class="hljs-number">10</span>, <span class="hljs-number">5</span>, <span class="hljs-number">8</span>, <span class="hljs-number">12</span>, <span class="hljs-number">6</span>];
+  <span class="hljs-keyword">const</span> totalSum = calculateSum(numbersList);
+
+  <span class="hljs-built_in">console</span>.log(<span class="hljs-string">"Tổng của các số trong danh sách là: "</span> + totalSum);
+</code></pre>
+</li>
+<li><p>Trong ví dụ này:</p>
+</li>
+<li>Chúng ta đã định nghĩa hàm <code>calculateSum</code> với một tham số <code>numbers</code>, đại diện cho một mảng các số.</li>
+<li>Trong khối mã lệnh của hàm, chúng ta sử dụng vòng lặp để duyệt qua từng phần tử trong mảng và tính tổng của chúng.</li>
+<li>Sau khi tính tổng, chúng ta trả về giá trị tổng từ hàm.</li>
+<li>Sau đó, chúng ta tạo một mảng <code>numbersList</code> và gọi hàm <code>calculateSum</code> với mảng này làm tham số.</li>
+<li>Cuối cùng, chúng ta in ra tổng của các số trong danh sách.</li>
+</ul>
+</li>
+</ol>
+</li>
+<li><h2 id="arrow-funtion">arrow funtion</h2>
+<ul>
+<li>Arrow function (hàm mũi tên) là một cú pháp mới trong JavaScript để định nghĩa hàm một cách ngắn gọn. Arrow function thường được sử dụng cho các hàm đơn giản và không chứa nhiều mã lệnh phức tạp. Dưới đây là cách sử dụng arrow function:</li>
+<li><h4 id="arrow-function-c-b-n">Arrow function cơ bản</h4>
+<pre><code class="lang-js"> <span class="hljs-keyword">const</span> functionName = <span class="hljs-function">(<span class="hljs-params">tham_so1, tham_so2, ...</span>) =&gt;</span> {
+     <span class="hljs-comment">// Khối mã lệnh của hàm</span>
+     <span class="hljs-keyword">return</span> ket_qua;
+ };
+</code></pre>
+</li>
+<li><p>Ví dụ:</p>
+<pre><code class="lang-js">  const add = <span class="hljs-function"><span class="hljs-params">(a, b)</span> =&gt;</span> {
+      <span class="hljs-keyword">return</span> a + b;
+  };
+</code></pre>
+</li>
+<li><h4 id="arrow-function-ng-n-g-n">Arrow function ngắn gọn</h4>
+</li>
+<li>Nếu khối mã lệnh chỉ chứa một biểu thức trả về, bạn có thể viết ngắn gọn bằng cách loại bỏ dấu ngoặc nhọn và từ khóa <code>return</code>.<pre><code class="lang-js">  const multiply = <span class="hljs-function"><span class="hljs-params">(x, y)</span> =&gt;</span> x * y;
+</code></pre>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<pre><code>    <span class="hljs-number">3.</span> #### Sử dụng arrow function trong xử lý sự kiện
+    - Arrow function thường được sử dụng để định nghĩa hàm xử lý sự kiện.
+        ```js
+        const button = document.getElementById(<span class="hljs-string">"myButton"</span>);
+        button.addEventListener(<span class="hljs-string">"click"</span>, () =&gt; {
+            console.log(<span class="hljs-string">"Button clicked!"</span>);
+        });
+        ```
+
+
+    <span class="hljs-number">4.</span> #### Arrow function và ngữ cảnh `this`
+    - Một ưu điểm của arrow function là nó không tạo ra ngữ cảnh `this` mới. Điều này thường hữu ích khi bạn muốn truy cập biến `this` của phạm vi bên ngoài.
+        ```js
+        function Counter() {
+            this.count = <span class="hljs-number">0</span>;
+            this.increment = () =&gt; {
+                this.count++;
+                console.log(this.count);
+            };
+        }
+        const myCounter = new Counter();
+        myCounter.increment(); <span class="hljs-comment">// Kết quả: 1</span>
+        myCounter.increment(); <span class="hljs-comment">// Kết quả: 2</span>
+        ```
+
+        &gt;**Arrow function thường rất hữu ích trong các trường hợp đơn giản, khi bạn muốn viết mã ngắn gọn và dễ đọc. Tuy nhiên, hãy lưu ý rằng arrow function không thể thay thế hoàn toàn cho các hàm thông thường, đặc biệt trong các tình huống phức tạp hơn.**
+</code></pre><h1 class="document-section" id="l-m-vi-c-v-i-api-xmlhttprequest-fetch-">Làm việc với API (XMLHTTPRequest, Fetch)</h1>
+<ul>
+<li><p>Là một phần quan trọng của việc phát triển ứng dụng web để tương tác với dữ liệu từ các nguồn bên ngoài. Trong JavaScript, bạn có thể sử dụng <code>XMLHttpRequest</code> hoặc <code>fetch</code> để gửi các yêu cầu HTTP đến các API và nhận phản hồi từ chúng. </p>
+<ul>
+<li><h2 id="xmlhttprequest">XMLHTTPRequest</h2>
+<ul>
+<li><p>Là một cách truyền thống để tạo và gửi các yêu cầu HTTP.</p>
+<pre><code class="lang-js">  <span class="hljs-keyword">let</span> xhr = <span class="hljs-keyword">new</span> XMLHttpRequest();
+  xhr.open(<span class="hljs-string">'GET'</span>, <span class="hljs-string">'http://domain/service'</span>);
+
+  <span class="hljs-comment">// request state change event</span>
+  xhr.onreadystatechange = <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
+
+    <span class="hljs-comment">// request completed?</span>
+    <span class="hljs-keyword">if</span> (xhr.readyState !== <span class="hljs-number">4</span>) <span class="hljs-keyword">return</span>;
+
+    <span class="hljs-keyword">if</span> (xhr.status === <span class="hljs-number">200</span>) {
+      <span class="hljs-comment">// request successful - show response</span>
+      <span class="hljs-built_in">console</span>.log(xhr.responseText);
+    }
+    <span class="hljs-keyword">else</span> {
+      <span class="hljs-comment">// request error</span>
+      <span class="hljs-built_in">console</span>.log(<span class="hljs-string">'HTTP error'</span>, xhr.status, xhr.statusText);
+    }
+  };
+
+  <span class="hljs-comment">// start request</span>
+  xhr.send();
+</code></pre>
+</li>
+<li>Đối tượng <code>XMLHttpRequest</code> có nhiều tùy chọn, sự kiện và thuộc tính phản hồi khác.</li>
+<li>Ví dụ có thể đặt và phát hiện thời gian timeout tính bằng mili giây<pre><code class="lang-js">  <span class="hljs-comment">// set timeout</span>
+  xhr.timeout = <span class="hljs-number">3000</span>; <span class="hljs-comment">// 3 seconds</span>
+  xhr.ontimeout = <span class="hljs-function"><span class="hljs-params">()</span> =&gt;</span> <span class="hljs-built_in">console</span>.log(<span class="hljs-string">'timeout'</span>, xhr.responseURL);
+</code></pre>
+</li>
+<li>Và một sự kiện <code>progress</code> thông báo tiến trình tải lên một tệp tin dài<pre><code class="lang-js">  <span class="hljs-comment">// upload progress</span>
+  xhr.upload.onprogress = <span class="hljs-function"><span class="hljs-params">p</span> =&gt;</span> {
+    <span class="hljs-built_in">console</span>.log( <span class="hljs-built_in">Math</span>.round((p.loaded / p.total) * <span class="hljs-number">100</span>) + <span class="hljs-string">'%'</span>) ;
+  }
+</code></pre>
+</li>
+<li>Số lượng tùy chọn nhiều và có một vài sự mâu thuẫn giữa các trình duyệt. Vì lý do này, hầu hết các thư viện và framework cung cấp các hàm bao bọc Ajax để xử lý sự phức tạp. Ví dụ phương thức <code>jQuery.ajax()</code><pre><code class="lang-js">  <span class="hljs-comment">// jQuery Ajax</span>
+  $.ajax(<span class="hljs-string">'http://domain/service'</span>)
+    .done(<span class="hljs-function"><span class="hljs-params">data</span> =&gt;</span> <span class="hljs-built_in">console</span>.log(data))
+    .fail(<span class="hljs-function">(<span class="hljs-params">xhr, status</span>) =&gt;</span> <span class="hljs-built_in">console</span>.log(<span class="hljs-string">'error:'</span>, status));
+</code></pre>
+</li>
+</ul>
+</li>
+<li><h2 id="fletch">Fletch</h2>
+<ul>
+<li>Fetch API là một thay thế hiện đại cho XMLHttpRequest. Các interface về <code>Headers</code>, <code>Request</code>, <code>Response</code> được cung cấp một cách nhất quán, <code>Promises</code> cho phép xâu chuỗi một cách dễ dàng hơn và <code>async/await</code> không có <code>callback</code>. Ví dụ XHR ở trên có thể được chuyển đổi thành <code>Fetch-based</code> code đơn giản hơn nhiều.<pre><code class="lang-js">  fetch(<span class="hljs-string">"https://api.example.com/data"</span>)
+      .then(<span class="hljs-function"><span class="hljs-params">response</span> =&gt;</span> {
+          <span class="hljs-keyword">if</span> (!response.ok) {
+              <span class="hljs-keyword">throw</span> <span class="hljs-keyword">new</span> <span class="hljs-built_in">Error</span>(<span class="hljs-string">"Network response was not ok"</span>);
+          }
+          <span class="hljs-keyword">return</span> response.json();
+      })
+      .then(<span class="hljs-function"><span class="hljs-params">data</span> =&gt;</span> {
+          <span class="hljs-built_in">console</span>.log(data); <span class="hljs-comment">// Dữ liệu đã được chuyển đổi thành JSON</span>
+      })
+      .catch(<span class="hljs-function"><span class="hljs-params">error</span> =&gt;</span> {
+          <span class="hljs-built_in">console</span>.error(<span class="hljs-string">"Fetch error:"</span>, error);
+      });
+</code></pre>
+</li>
+<li>Trong ví dụ trên:<ol>
+<li>Chúng ta sử dụng <code>fetch</code> để tạo yêu cầu GET đến URL <code>&quot;https://api.example.com/data&quot;</code>.</li>
+<li>Chúng ta sử dụng <code>.then()</code> để xử lý phản hồi. Trong trường hợp này, chúng ta kiểm tra xem phản hồi có trạng thái <code>ok</code> hay không. Nếu không, chúng ta ném một lỗi.</li>
+<li>Nếu phản hồi có trạng thái <code>ok</code>, chúng ta sử dụng <code>.json()</code> để chuyển đổi dữ liệu JSON của phản hồi thành đối tượng JavaScript.</li>
+<li>Cuối cùng, chúng ta sử dụng <code>.catch()</code> để xử lý bất kỳ lỗi nào trong quá trình yêu cầu hoặc xử lý phản hồi.</li>
+</ol>
+</li>
+</ul>
+</li>
+<li><h2 id="xmlhttprequest-hay-fetch-api-">XMLHttpRequest hay Fetch API?</h2>
+<ul>
+<li><code>XMLHttpRequest</code> và <code>Fetch API</code> đều là cách để tương tác với các nguồn dữ liệu từ máy chủ hoặc API trên web. Tuy nhiên, <code>Fetch API</code> thường được ưa chuộng hơn trong các ứng dụng hiện đại do cú pháp dễ đọc hơn và khả năng xử lý Promise tích hợp</li>
+<li><p>Dưới đây là một số so sánh giữa <code>XMLHttpRequest</code> và <code>Fetch API</code>:</p>
+<ol>
+<li><strong>Cú pháp:</strong></li>
+<li><code>XMLHttpRequest</code>: Cú pháp của <code>XMLHttpRequest</code> phức tạp hơn và thường cần nhiều bước để tạo và thực hiện yêu cầu.</li>
+<li><p><code>Fetch API</code>: Cú pháp của <code>Fetch API</code> dễ đọc và sử dụng. Nó sử dụng cú pháp chuỗi hơn để xây dựng yêu cầu.</p>
+</li>
+<li><p><strong>Promise tích hợp:</strong></p>
+</li>
+<li><code>XMLHttpRequest</code>: Không tích hợp trực tiếp Promise, dẫn đến việc phải sử dụng callback để xử lý phản hồi.</li>
+<li><p><code>Fetch API</code>: Tích hợp Promise, giúp quản lý dễ dàng việc xử lý thành công và thất bại.</p>
+</li>
+<li><p><strong>Xử lý JSON:</strong></p>
+</li>
+<li><code>XMLHttpRequest</code>: Cần phải thực hiện việc chuyển đổi JSON bằng cách sử dụng <code>JSON.parse</code>.</li>
+<li><p><code>Fetch API</code>: Có thể trực tiếp gọi phương thức <code>.json()</code> để chuyển đổi dữ liệu JSON.</p>
+</li>
+<li><p><strong>Xử lý CORS (Cross-Origin Resource Sharing):</strong></p>
+</li>
+<li><code>XMLHttpRequest</code> và <code>Fetch API</code> đều có thể xử lý CORS, nhưng <code>Fetch API</code> cung cấp cách linh hoạt hơn trong việc xử lý CORS.</li>
+</ol>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+    </div>
+  </div>
+ 
+
+
+
+
+
+
+
+
+
+
+
+  <footer class="bg-dark py-4">
+    <div class="footer">
+      <div class="row">
+
+        <div class="col-md-6">
+          <p>&copy; 2023 Your Company</p>
+        </div>
+        <div class="col-md-6 text-md-right">
+          <p>Contact: info@example.com</p>
+        </div>
+        <div class="col-md-6 text-md-right"  style="margin: 0 30% 0 30%;">
+          <a href="#">Privacy Policy</a> | 
+          <a href="#">Terms of Use</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>
